@@ -10,17 +10,19 @@ db.animals.insertMany([
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
     population: "2,000",
-    status: "Vulnerable"
+    status: "Vulnerable",
+    fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old."
   },
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
     pictures: "url: /images/giant-panda_image.png",
     description: "The Bengal tiger lives in the Indian subcontinent. The species is threatened by poaching and loss of habitat caused by climate change. The Bengal tiger is one of the biggest wild cats alive and is the national animal of India and Bangladesh",
-    locations: "Most live in India, with a few hundered in Bangladesh, Nepal and Bhutan",
+    locations: "Most live in India, with a few hundred in Bangladesh, Nepal and Bhutan",
     habitat: "Prime lowland forest, and they also thrive in mangrove swamps",
     population: "2,500",
     status: "Endangered",
+    fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!"
   },
   {
     animal_name: "Asian elephant",
@@ -31,6 +33,7 @@ db.animals.insertMany([
     habitat: "Forests",
     population: "35,000",
     status: "Endangered",
+    fun_fact: "Throughout their lifetime, Asian elephants go through six sets of teeth!"
   },
   {
     animal_name: "Gorilla",
@@ -41,6 +44,7 @@ db.animals.insertMany([
     habitat: "Tropical or sub-tropical forests",
     population: "100,000?",
     status: "Critically endangered",
+    fun_facts: "Some gorillas in captivity have learned to communicate with humans using sign language!"
   },
   {
     animal_name: "Snow leopard",
@@ -51,6 +55,7 @@ db.animals.insertMany([
     habitat: " Alpine and subalpine mountain ranges",
     population: "3,500 - 7,000",
     status: "Vulnerable",
+    fun_fact: "Snow leopards are nicknamed 'ghosts of the mountain' because they are so rarely seen and spend most of their lives in solitude!"
   },
   {
     animal_name: "Orangutan",
@@ -61,8 +66,10 @@ db.animals.insertMany([
     habitat: "Rainforests",
     population: "110,000",
     status: "Critically engangered",
-  },
-  {
+    fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
+  }
+
+    {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "url: /images/giant-panda_image.png",
@@ -71,26 +78,29 @@ db.animals.insertMany([
     habitat: "deep water",
     population: "10,000-25,000",
     status: "Endangered",
+    fun_fact: "In the wild, blue whales can live as long as 90 years!"
   },
   {
     animal_name: "Green sea turtle",
     species: "Chelonia mydas",
     pictures: "url: /images/giant-panda_image.png",
-    description: "Green sea turtles are large air-breathing reptiles and are one of the Earth's most ancient creatures. They play a vital role in the balance of marine habitats. Nearly all species of sea turtle are endangered. They suffer from poaching, over-exploitation and habitat destruction. It is hard to estimate their population as they are very difficult to track",
+    description: "Green sea turtles are large air-breathing reptiles and are one of the Earth's most ancient creatures. They play a vital role in the balance of marine habitats. Nearly all species of sea turtle are endangered. They suffer from poaching, over-exploitation and habitat destruction. It is hard to estimate their population as they are very difficult to track.",
     locations: "Atlantic, Pacific and Indian oceans",
     habitat: "Shallow coastal waters",
     population: "Estimated ay 90,000 nesting females",
     status: "Endangered",
+    fun_fact: "Green sea turtles can hold their breath underwater for 5 hours!"
   },
   {
     animal_name: "Black rhino",
     species: "Diceros bicornis",
     pictures: "url: /images/giant-panda_image.png",
-    description: "Populations of black rhinos declined by 98 % in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still considered critically endangered because of poaching and black-market trafficking of rhino horn",
+    description: "Populations of black rhinos declined by 98% in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still considered critically endangered because of poaching and black-market trafficking of rhino horn.",
     locations: "Eastern and southern Africa",
     habitat: "Semi-Desert Savannah, Woodlands, Forests, Wetlands",
     population: "5,000",
     status: "Critically endangered",
+    fun_fact: "Black rhinos run on their toes and can reach speeds of 35 miles per hour!"
   },
   {
     animal_name: "African penguin",
@@ -101,6 +111,7 @@ db.animals.insertMany([
     habitat: "Flat sandy areas with sparse or abundant vegetation, or steep, rocky sites with sparse vegetation",
     population: "50,000",
     status: "Endangered",
+    fun_fact: "African penguins can sleep while standing up!"
   },
   {
     animal_name: "Red Panda",
@@ -111,6 +122,7 @@ db.animals.insertMany([
     habitat: "Temperate forests",
     population: "10,000",
     status: "Endangered",
+    fun_fact: "Red pandas lick themselves clean, just like cats do!"
   },
   {
     animal_name: "Polar bear",
@@ -121,6 +133,7 @@ db.animals.insertMany([
     habitat: "Annual sea ice of the Arctic inter islands",
     population: "Estimated at 30,000",
     status: "Vulnerable",
-  },
+    fun_fact: "Polar bears have black skin under their white fur coats, this helps them to keep heat from the sun!"
+  }
 ]);
 
