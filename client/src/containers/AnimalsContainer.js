@@ -7,6 +7,7 @@ const AnimalsContainer = () => {
     const [selectedAnimal, setSelectedAnimal] = useState(null);
     const [favouriteAnimals, setFavouriteAnimals] = useState([]);
 
+    // Replace below with correct selectedAnimal code - below is placeholder from SJ
     // Update state with a single animal object that was selected
     const handleSelectedAnimal = (animal) => {
         // Check if animal is a favourite and if it is use that instead of the selected object 
