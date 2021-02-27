@@ -1,15 +1,16 @@
 import React from "react";
 
-const AnimalsList = ({animalPicture, onSelectedPicture}) => {
+const AnimalsList = ({animals}) => {
 
-    const animalListItems = animalPictures.map((picture, index) => {
-        return <li onClick={() => {onSelectedPicture(picture)}} key = {index}>{animal.name} {animal.picture} </li>
+    const animalListItems = animals.map((picture, index) => {
+        return <li onClick={() => {onSelectedAnimal(picture)}} 
+        key = {index}>{animal.name} {animal.picture} </li>
     })
 
     return (
         <>
         <ul>
-            {animalListitems}
+            {animalListItems}
         </ul>
         </>
     )
