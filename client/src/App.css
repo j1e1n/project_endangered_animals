@@ -23,12 +23,10 @@ body {
 
 header {
     grid-area: header;
-    justify-self: center;
 }
 
 .favourites-container {
     grid-area: favourites;
-    justify-self: center;
 }
 
 .map-container {
@@ -49,5 +47,21 @@ header {
 
 .quiz-container {
     grid-area: quiz;
-    justify-self: center;
+}
+
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+header,
+.favourites-container,
+.animal-detail-container,
+.animals-list-container,
+.quiz-container,
+.facts-container,
+.map-container {
+    width: 100%;
+    border: 3px solid grey;
+    text-align: center;
 }
