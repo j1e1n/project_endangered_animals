@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import AnimalDetail from '../components/AnimalDetail';
 import Favourites from '../components/Favourites';
+import FunFactCard from '../components/FunFactCard';
 
 const AnimalsContainer = () => {
 
@@ -40,13 +42,13 @@ const AnimalsContainer = () => {
                 <h2>Map will go here...</h2>
             </div>
             <div className="facts-container">
-                <h2>Fun facts will go here...</h2>
+                <FunFactCard selectedAnimal={selectedAnimal}/>
             </div>
             <div className="animals-list-container">
                 <h2>Animals list will go here...</h2>
             </div>
             <div className="animal-detail-container">
-                <h2>Animal detail will go here...</h2>
+                <AnimalDetail selectedAnimal={selectedAnimal}/> 
             </div>
             <div className="quiz-container">
                 <h2>Quiz will go here...</h2>
