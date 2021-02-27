@@ -6,13 +6,14 @@ db.animals.insertMany([
     animal_name: "Giant Panda",
     species: "Ailuropoda melanoleuca",
     pictures: "url: /images/giant-panda_image.png",
-    description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population",
+    description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
     population: "2,000",
     status: "Vulnerable",
-    fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old."
-  },
+    fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
+    locator: "34.51361534847529, 102.69247855623375",
+},
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
@@ -22,8 +23,9 @@ db.animals.insertMany([
     habitat: "Prime lowland forest, and they also thrive in mangrove swamps",
     population: "2,500",
     status: "Endangered",
-    fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!"
-  },
+    fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!",
+    locator: "24.294280580413883, 88.53156685633614",
+},
   {
     animal_name: "Asian elephant",
     species: "Elephas maximus",
@@ -33,7 +35,8 @@ db.animals.insertMany([
     habitat: "Forests",
     population: "35,000",
     status: "Endangered",
-    fun_fact: "Throughout their lifetime, Asian elephants go through six sets of teeth!"
+    fun_fact: "Throughout their lifetime, Asian elephants go through six sets of teeth!",
+    locator: "11.901294670854883, 78.8818769644848",
   },
   {
     animal_name: "Gorilla",
@@ -44,7 +47,8 @@ db.animals.insertMany([
     habitat: "Tropical or sub-tropical forests",
     population: "100,000?",
     status: "Critically endangered",
-    fun_facts: "Some gorillas in captivity have learned to communicate with humans using sign language!"
+    fun_facts: "Some gorillas in captivity have learned to communicate with humans using sign language!",
+    locator: "-0.46355795092012997, 23.552201804629817",
   },
   {
     animal_name: "Snow leopard",
@@ -55,19 +59,21 @@ db.animals.insertMany([
     habitat: " Alpine and subalpine mountain ranges",
     population: "3,500 - 7,000",
     status: "Vulnerable",
-    fun_fact: "Snow leopards are nicknamed 'ghosts of the mountain' because they are so rarely seen and spend most of their lives in solitude!"
+    fun_fact: "Snow leopards are nicknamed 'ghosts of the mountain' because they are so rarely seen and spend most of their lives in solitude!",
+    locator: "36.721157123856294, 75.88707554071537",
   },
   {
     animal_name: "Orangutan",
     species: "Pongo pygmaeus",
     pictures: "url: /images/giant-panda_image.png",
     description: "Orangutans are among the world's largest tree-climbing mammals and are closely related to humans. They are extremely patient and intelligent, as well as very observant and inquisitive. Their rainforest habitats are disappearing at an alarming rate because of deforestation and clearing of the land. This makes their extinction in the wild likely in the next 10 years",
-    locations: "Indoneasia and Malasyia",
+    locations: "Indoneasia and Borneo",
     habitat: "Rainforests",
     population: "110,000",
     status: "Critically engangered",
-    fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
-  }
+    fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!",
+    locator: "-0.5075762249651253, 112.70316860164365",
+  },
 
     {
     animal_name: "Blue whale",
@@ -78,7 +84,8 @@ db.animals.insertMany([
     habitat: "deep water",
     population: "10,000-25,000",
     status: "Endangered",
-    fun_fact: "In the wild, blue whales can live as long as 90 years!"
+    fun_fact: "In the wild, blue whales can live as long as 90 years!",
+    locator: "30.07234753595548, -129.88357395959068",
   },
   {
     animal_name: "Green sea turtle",
@@ -89,7 +96,8 @@ db.animals.insertMany([
     habitat: "Shallow coastal waters",
     population: "Estimated ay 90,000 nesting females",
     status: "Endangered",
-    fun_fact: "Green sea turtles can hold their breath underwater for 5 hours!"
+    fun_fact: "Green sea turtles can hold their breath underwater for 5 hours!",
+    locator: "-5.7953812553865705, 70.30973006900552",
   },
   {
     animal_name: "Black rhino",
@@ -100,7 +108,8 @@ db.animals.insertMany([
     habitat: "Semi-Desert Savannah, Woodlands, Forests, Wetlands",
     population: "5,000",
     status: "Critically endangered",
-    fun_fact: "Black rhinos run on their toes and can reach speeds of 35 miles per hour!"
+    fun_fact: "Black rhinos run on their toes and can reach speeds of 35 miles per hour!",
+    locator: "-22.715242443569938, 30.07906914046745",
   },
   {
     animal_name: "African penguin",
@@ -111,7 +120,8 @@ db.animals.insertMany([
     habitat: "Flat sandy areas with sparse or abundant vegetation, or steep, rocky sites with sparse vegetation",
     population: "50,000",
     status: "Endangered",
-    fun_fact: "African penguins can sleep while standing up!"
+    fun_fact: "African penguins can sleep while standing up!",
+    locator: "-34.24898862515669, 25.302979680633296",
   },
   {
     animal_name: "Red Panda",
@@ -122,7 +132,8 @@ db.animals.insertMany([
     habitat: "Temperate forests",
     population: "10,000",
     status: "Endangered",
-    fun_fact: "Red pandas lick themselves clean, just like cats do!"
+    fun_fact: "Red pandas lick themselves clean, just like cats do!",
+    locator: "28.01398012500806, 90.80251459985779",
   },
   {
     animal_name: "Polar bear",
@@ -133,7 +144,8 @@ db.animals.insertMany([
     habitat: "Annual sea ice of the Arctic inter islands",
     population: "Estimated at 30,000",
     status: "Vulnerable",
-    fun_fact: "Polar bears have black skin under their white fur coats, this helps them to keep heat from the sun!"
+    fun_fact: "Polar bears have black skin under their white fur coats, this helps them to keep heat from the sun!",
+    locator: "79.45222766702923, 17.030418490108687",
   }
 ]);
 
