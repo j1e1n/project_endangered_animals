@@ -26,7 +26,6 @@ const AnimalsContainer = () => {
     // in the same manner as clicking on an animal from the results list
     const handleFavImageClicked = (favAnimalClicked) => {
         handleSelectedAnimal(favAnimalClicked);
-
     }
 
     return (

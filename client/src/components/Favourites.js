@@ -8,8 +8,8 @@ const Favourites = ({ favouriteAnimals, onFavImageClicked }) => {
         return (
             <img onClick={() => { onFavImageClicked(favouriteAnimal) }}
                 className="fav-image"
-                src={favouriteAnimal.image.medium}
-                key={favouriteAnimal.id}
+                src={favouriteAnimal.image.medium} // TODO :need location of animal picture
+                key={favouriteAnimal.id} // TODO :need animal ID
                 alt="" height="100px">
             </img>)
     })
