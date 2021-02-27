@@ -11,7 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 80px 100px repeat(3, 1fr);
     grid-template-areas:
         "header header"
         "favourites favourites"
@@ -19,6 +19,7 @@ body {
         "animals-list animal-detail"
         "quiz quiz";
     gap: 1em;
+    margin: 1em;
 }
 
 header {
@@ -54,6 +55,7 @@ header {
     height: 100vh;
 }
 
+/* Temporary borders to show page layout */
 header,
 .favourites-container,
 .animal-detail-container,
