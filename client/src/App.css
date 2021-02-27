@@ -1,4 +1,76 @@
+<<<<<<< HEAD
 .leaflet-container {
   width: 100vw;
   height: 100vh;
 }
+=======
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 100px repeat(3, 1fr);
+    grid-template-areas:
+        "header header"
+        "favourites favourites"
+        "map facts"
+        "animals-list animal-detail"
+        "quiz quiz";
+    gap: 1em;
+    margin: 1em;
+}
+
+header {
+    grid-area: header;
+}
+
+.favourites-container {
+    grid-area: favourites;
+}
+
+.map-container {
+    grid-area: map;
+}
+
+.facts-container {
+    grid-area: facts;
+}
+
+.animals-list-container {
+    grid-area: animals-list;
+}
+
+.animal-detail-container {
+    grid-area: animal-detail;
+}
+
+.quiz-container {
+    grid-area: quiz;
+}
+
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+/* Temporary borders to show page layout */
+header,
+.favourites-container,
+.animal-detail-container,
+.animals-list-container,
+.quiz-container,
+.facts-container,
+.map-container {
+    width: 100%;
+    border: 3px solid grey;
+    text-align: center;
+}
+>>>>>>> develop
