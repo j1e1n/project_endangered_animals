@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Favourites from '../components/Favourites';
+import Map from "../components/Map";
+import Quiz from "../components/Quiz";
 
 const AnimalsContainer = () => {
 
@@ -37,7 +39,7 @@ const AnimalsContainer = () => {
             <Favourites favouriteAnimals={favouriteAnimals} onFavImageClicked={handleFavImageClicked} />
 
             <div className="map-container">
-                <h2>Map will go here...</h2>
+                <Map />
             </div>
             <div className="facts-container">
                 <h2>Fun facts will go here...</h2>
@@ -49,7 +51,7 @@ const AnimalsContainer = () => {
                 <h2>Animal detail will go here...</h2>
             </div>
             <div className="quiz-container">
-                <h2>Quiz will go here...</h2>
+                < Quiz />
             </div>
         </div>
     )
