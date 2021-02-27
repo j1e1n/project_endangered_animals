@@ -1,7 +1,7 @@
 import React from'react';
 
 
-const animalDetail = (selectedAnimal) => {
+const animalDetail = ({selectedAnimal}) => {
     return(
         <>
         <div className="animal-detail">
