@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 100px repeat(3, 1fr);
+    grid-template-areas:
+        "header header"
+        "favourites favourites"
+        "map facts"
+        "animals-list animal-detail"
+        "quiz quiz";
+    gap: 1em;
+    margin: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    grid-area: header;
 }
 
-.App-link {
-  color: #61dafb;
+.favourites-container {
+    grid-area: favourites;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+    grid-area: map;
+}
+
+.facts-container {
+    grid-area: facts;
+}
+
+.animals-list-container {
+    grid-area: animals-list;
+}
+
+.animal-detail-container {
+    grid-area: animal-detail;
+}
+
+.quiz-container {
+    grid-area: quiz;
+}
+
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+/* Temporary borders to show page layout */
+header,
+.favourites-container,
+.animal-detail-container,
+.animals-list-container,
+.quiz-container,
+.facts-container,
+.map-container {
+    width: 100%;
+    border: 3px solid grey;
+    text-align: center;
 }
