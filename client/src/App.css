@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 .leaflet-container {
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
 }
-=======
 *,
 *::before,
 *::after {
@@ -73,4 +71,3 @@ header,
     border: 3px solid grey;
     text-align: center;
 }
->>>>>>> develop
