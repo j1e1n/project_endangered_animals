@@ -10,7 +10,7 @@ db.animals.insertMany([
         locations: "China",
         habitat: "Bamboo forests on humid mountains",
         population: "2,000",
-        status: "Vulnerable"
+        status: "Vulnerable",
     },
     {
         animal_name: "Bengal tiger",
@@ -85,9 +85,9 @@ db.animals.insertMany([
       },
       {
         animal_name: "Black rhino",
-        species: "Diceros bicornis,
+        species: "Diceros bicornis",
         pictures: "url: /images/giant-panda_image.png",
-        description: 'Populations of black rhinos declined by 98 % in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still considered critically endangered because of poaching and black-market trafficking of rhino horn",
+        description: "Populations of black rhinos declined by 98 % in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still critically endangered because of poaching and black-market trafficking of rhino horn",
         locations: "Eastern and southern Africa",
         habitat: "Semi-Desert Savannah, Woodlands, Forests, Wetlands",
         population: "5,000",
