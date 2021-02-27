@@ -67,7 +67,7 @@ db.animals.insertMany([
     population: "110,000",
     status: "Critically engangered",
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
-  }
+  },
 
     {
     animal_name: "Blue whale",
