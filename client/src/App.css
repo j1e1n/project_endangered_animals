@@ -53,26 +53,32 @@ li:hover {
 
 header {
     grid-area: header;
+    box-shadow: var(--box-shadow-light);
 }
 
 .map-container {
     grid-area: map;
+    box-shadow: var(--box-shadow-light);
 }
 
 .facts-container {
     grid-area: facts;
+    box-shadow: var(--box-shadow-light);
 }
 
 .animals-list-container {
     grid-area: animals-list;
+    box-shadow: var(--box-shadow-light);
 }
 
 .animal-detail-container {
     grid-area: animal-detail;
+    box-shadow: var(--box-shadow-light);
 }
 
 .quiz-container {
     grid-area: quiz;
+    box-shadow: var(--box-shadow-light);
 }
 
 .container {
@@ -84,11 +90,12 @@ header {
 .favourites-container {
     grid-area: favourites;
     text-align: center;
+    box-shadow: var(--box-shadow-light);
 }
 
-.favourites-container::-webkit-scrollbar {
+/* .favourites-container::-webkit-scrollbar {
     display: none;
-}
+} */
 .fav-container {
     display: flex;
     overflow-x: auto;
@@ -122,7 +129,7 @@ header,
 .facts-container,
 .map-container {
     width: 100%;
-    border: 3px solid grey;
+    /* border: 3px solid grey; */
     text-align: center;
 }
 

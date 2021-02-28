@@ -33,10 +33,19 @@ const AnimalsContainer = () => {
 
     // Handle the add fav animal to array of fav animals after favourite clicked and if not already a favourite
     const handleFavouriteClick = (favAnimal) => {
-        const newFavAnimalList = [...favouriteAnimals, favAnimal]
-        setFavouriteAnimals(newFavAnimalList);
-        // console.log(favAnimal);
+        // Using some() method to check the animal id DOES NOT ! already exist
+        if (!favouriteAnimals.some(favouriteAnimal => favouriteAnimal._id === favAnimal._id)) {
+
+            // If this is a new favourite animal then
+            // - Add a favourite tag to the animal object
+            // - Copy the current state of fav animals and add the new fav animal
+            favAnimal.favourite = true;
+            const newFavAnimalList = [...favouriteAnimals, favAnimal]
+            setFavouriteAnimals(newFavAnimalList);
+            // console.log(favAnimal);
+        }
     }
+
 
     // Handle what to do when the fav animal in the favourite list is clicked
     // Update the animalDetail card with the favourite clicked
