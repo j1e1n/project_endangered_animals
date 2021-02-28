@@ -13,7 +13,16 @@ db.animals.insertMany([
     status: "Vulnerable",
     fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
     locator: "34.51361534847529, 102.69247855623375",
-},
+    questions: [{
+      q1: "Question one question here",
+      a1: "Answer one here"
+    },
+    {
+      q2: "Question two question here",
+      a2: "Answer two here"
+    }],
+  },
+
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
@@ -25,7 +34,7 @@ db.animals.insertMany([
     status: "Endangered",
     fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!",
     locator: "24.294280580413883, 88.53156685633614",
-},
+  },
   {
     animal_name: "Asian elephant",
     species: "Elephas maximus",
@@ -75,7 +84,7 @@ db.animals.insertMany([
     locator: "-0.5075762249651253, 112.70316860164365",
   },
 
-    {
+  {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "images/animal_pics/whale.jpeg",

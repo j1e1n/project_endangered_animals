@@ -9,6 +9,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* --primary-color: blueviolet; */
+    /* --secondary-color: orange; */
+
+    --box-shadow-heavy: 0 4px 8px 0 rgba(0, 0, 0, 0.9),
+        0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    --box-shadow-light: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 body {
     margin: 0;
 }
@@ -21,7 +31,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 150px 1fr 1fr 1fr;
+    grid-template-rows: 80px auto 1fr 1fr 1fr;
     grid-template-areas:
         "header header"
         "favourites favourites"
@@ -45,10 +55,6 @@ header {
     grid-area: header;
 }
 
-.favourites-container {
-    grid-area: favourites;
-}
-
 .map-container {
     grid-area: map;
 }
@@ -59,6 +65,26 @@ header {
 
 .animals-list-container {
     grid-area: animals-list;
+    /* border: 3px solid blue; */
+}
+
+.animal-list-inner-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: auto;
+    border: 3px solid red;
+}
+
+.animal-list-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1em;
+    border: 3px solid grey;
+}
+
+.animal-list-image:hover {
+    box-shadow: var(--box-shadow-heavy);
 }
 
 .animal-detail-container {
@@ -70,8 +96,36 @@ header {
 }
 
 .container {
-    /* border: 1px solid red; */
     height: 100vh;
+}
+
+/* Favourite container hold favourite animal images */
+.favourites-container {
+    grid-area: favourites;
+    text-align: center;
+}
+
+.fav-container {
+    display: flex;
+    overflow-x: auto;
+    /* width: 80%;
+    margin: auto;
+    justify-items: center; */
+}
+
+.fav-image {
+    margin: 1em;
+    border: 3px solid grey;
+    border-radius: 50%;
+}
+
+.fav-image:hover {
+    box-shadow: var(--box-shadow-heavy);
+}
+
+.favouriteAnimalsTitle {
+    /* display: flex; */
+    margin-bottom: 0em;
 }
 
 /* Temporary borders to show page layout */
@@ -83,8 +137,9 @@ header,
 .facts-container,
 .map-container {
     width: 100%;
-    border: 3px solid grey;
+    /* border: 3px solid grey; */
     text-align: center;
+    box-shadow: var(--box-shadow-light);
 }
 
 .favourites-container > li {
