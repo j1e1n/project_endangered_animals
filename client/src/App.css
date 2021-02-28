@@ -1,5 +1,9 @@
 .leaflet-container {
+<<<<<<< HEAD
   width: 50vh;
+=======
+  width: 50vw;
+>>>>>>> develop
   height: 50vh;
 }
 *,
