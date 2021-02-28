@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
+<<<<<<< HEAD
+
+import animalDetail from '../components/AnimalDetail'
+import AnimalsList from '../components/AnimalsList'
+import Favourites from '../components/Favourites'
+import FunFactCard from '../components/FunFactCard'
+import Map from '../components/Map'
+import Quiz from '../components/Quiz'
+=======
 import AnimalsList from '../components/AnimalsList';
 import Favourites from '../components/Favourites';
 import Map from "../components/Map";
@@ -8,6 +17,7 @@ import AnimalsService from "../services/AnimalsService";
 import AnimalDetail from "../components/AnimalDetail";
 import FunFactCard from '../components/FunFactCard';
 
+>>>>>>> develop
 
 const AnimalsContainer = () => {
 
@@ -47,7 +57,11 @@ const AnimalsContainer = () => {
             <Favourites favouriteAnimals={favouriteAnimals} />
 
             <div className="map-container">
+<<<<<<< HEAD
+                <Map/>
+=======
                 <Map />
+>>>>>>> develop
             </div>
 
             <div className="facts-container">
@@ -67,8 +81,12 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="quiz-container">
+<<<<<<< HEAD
+                <Quiz/>
+=======
                 <h2>Quiz will go here...</h2>
                 <Quiz />
+>>>>>>> develop
             </div>
 
         </div>

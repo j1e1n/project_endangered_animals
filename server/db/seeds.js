@@ -6,11 +6,7 @@ db.animals.insertMany([
     animal_name: "Giant Panda",
     species: "Ailuropoda melanoleuca",
     pictures: "images/animal_pics/panda.jpeg",
-<<<<<<< HEAD
-    description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population",
-=======
     description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
->>>>>>> develop
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
     population: "2,000",
@@ -75,17 +71,19 @@ db.animals.insertMany([
     habitat: "Rainforests",
     population: "110,000",
     status: "Critically engangered",
-<<<<<<< HEAD
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
   },
+
+
   {
-=======
+
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!",
     locator: "-0.5075762249651253, 112.70316860164365",
   },
 
+
     {
->>>>>>> develop
+
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "images/animal_pics/whale.jpeg",
