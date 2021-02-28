@@ -15,7 +15,7 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                 <br></br>
                 <p>The {selectedAnimal.animal_name} is <b>{selectedAnimal.status}</b>, there are {selectedAnimal.population} left in the world. </p>
                 <br></br>
-                <img src={selectedAnimal.pictures} width="50" height="50" alt={selectedAnimal.animal_name}/>
+                <img src={selectedAnimal.pictures} width="300" height="300" alt={selectedAnimal.animal_name}/>
                 <p>Locations: {selectedAnimal.locations}</p>
                 <p>Habitat: {selectedAnimal.habitat}</p>
                 <p>{selectedAnimal.description}</p>
