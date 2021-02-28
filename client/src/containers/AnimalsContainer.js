@@ -80,7 +80,7 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="map-container">
-                <Map />
+                <Map animals={animals} />
             </div>
 
             <div className="facts-container">
