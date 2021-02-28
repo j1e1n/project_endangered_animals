@@ -84,13 +84,6 @@ db.animals.insertMany([
     locator: "-0.5075762249651253, 112.70316860164365",
   },
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-  {
-=======
->>>>>>> 36b0ca911e5aeff239512160734aecab7e6b28a7
     {
 
     animal_name: "Blue whale",
