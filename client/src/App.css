@@ -47,7 +47,6 @@ li {
 }
 
 li:hover {
-    font-size: 2em;
     cursor: pointer;
 }
 
@@ -70,16 +69,18 @@ header {
 
 .animal-list-inner-container {
     display: flex;
-    flex-direction: column;
-    height: 300px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: fit-content;
     overflow: auto;
-    border: 3px solid red;
+    justify-content: center;
+    /* border: 3px solid red; */
 }
 
 .animal-list-image {
     width: 150px;
     height: auto;
-    margin-bottom: 1em;
+    margin: 0.5em;
     border: 3px solid grey;
 }
 
@@ -147,17 +148,15 @@ header,
     margin: 0.5em;
 }
 
-
-
 .hide {
     display: none;
     border: 1px solid red;
     text-align: left;
     padding: 20px;
     margin: 10px;
-  }
-  
-  .myDIV:hover + .hide {
+}
+
+.myDIV:hover + .hide {
     display: block;
     color: red;
-  }
+}
