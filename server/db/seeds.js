@@ -5,7 +5,7 @@ db.animals.insertMany([
   {
     animal_name: "Giant Panda",
     species: "Ailuropoda melanoleuca",
-    pictures: "url: /images/giant-panda_image.png",
+    pictures: "images/animal_pics/panda.jpeg",
     description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population",
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
@@ -16,7 +16,7 @@ db.animals.insertMany([
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
-    pictures: "url: /images/giant-panda_image.png",
+    pictures: "images/animal_pics/tiger.jpeg",
     description: "The Bengal tiger lives in the Indian subcontinent. The species is threatened by poaching and loss of habitat caused by climate change. The Bengal tiger is one of the biggest wild cats alive and is the national animal of India and Bangladesh",
     locations: "Most live in India, with a few hundred in Bangladesh, Nepal and Bhutan",
     habitat: "Prime lowland forest, and they also thrive in mangrove swamps",
@@ -67,9 +67,8 @@ db.animals.insertMany([
     population: "110,000",
     status: "Critically engangered",
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
-  }
-
-    {
+  },
+  {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "url: /images/giant-panda_image.png",

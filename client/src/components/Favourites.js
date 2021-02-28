@@ -6,12 +6,17 @@ const Favourites = ({ favouriteAnimals, onFavImageClicked }) => {
 
     const favouriteAnimalsImages = favouriteAnimals.map((favouriteAnimal) => {
         return (
-            <img onClick={() => { onFavImageClicked(favouriteAnimal) }}
-                className="fav-image"
-                src={favouriteAnimal.image.medium} // TODO :need location of animal picture
-                key={favouriteAnimal.id} // TODO :need animal ID
-                alt="" height="100px">
-            </img>)
+            // TODO: Put img back in code and remove <li> when images are sorted (SJ)
+            // <img onClick={() => { onFavImageClicked(favouriteAnimal) }}
+            //     className="fav-image"
+            //     src={favouriteAnimal.image} // TODO :need location of animal picture
+            //     key={favouriteAnimal._id} // TODO :need animal ID
+            //     alt="" height="100px">
+            // </img>
+            <li onClick={() => { onFavImageClicked(favouriteAnimal) }} key={favouriteAnimal._id}>
+                {favouriteAnimal.animal_name}
+            </li>
+        )
     })
 
     // Render view of a users favourite animals
