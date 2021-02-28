@@ -9,6 +9,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* --primary-color: blueviolet; */
+    /* --secondary-color: orange; */
+
+    --box-shadow-heavy: 0 4px 8px 0 rgba(0, 0, 0, 0.9),
+        0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    --box-shadow-light: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 body {
     margin: 0;
 }
@@ -21,7 +31,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 150px 1fr 1fr 1fr;
+    grid-template-rows: 80px auto 1fr 1fr 1fr;
     grid-template-areas:
         "header header"
         "favourites favourites"
@@ -43,10 +53,6 @@ li:hover {
 
 header {
     grid-area: header;
-}
-
-.favourites-container {
-    grid-area: favourites;
 }
 
 .map-container {
@@ -75,9 +81,36 @@ header {
 }
 
 /* Favourite container hold favourite animal images */
+.favourites-container {
+    grid-area: favourites;
+    text-align: center;
+}
+
+.favourites-container::-webkit-scrollbar {
+    display: none;
+}
+.fav-container {
+    display: flex;
+    overflow-x: auto;
+    /* width: 80%;
+    margin: auto;
+    justify-items: center; */
+}
+
 .fav-image {
     margin: 1em;
     border: 3px solid grey;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-light);
+}
+
+.fav-image:hover {
+    box-shadow: var(--box-shadow-heavy);
+}
+
+.favouriteAnimalsTitle {
+    /* display: flex; */
+    margin-bottom: 0em;
 }
 
 /* Temporary borders to show page layout */

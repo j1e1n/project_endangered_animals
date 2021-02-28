@@ -52,7 +52,9 @@ const AnimalsContainer = () => {
                 <h1>Endangered Animals</h1>
             </header>
 
-            <Favourites favouriteAnimals={favouriteAnimals} onFavImageClicked={handleFavImageClicked} />
+            <div className="favourites-container">
+                <Favourites favouriteAnimals={favouriteAnimals} onFavImageClicked={handleFavImageClicked} />
+            </div>
 
             <div className="map-container">
                 <Map />

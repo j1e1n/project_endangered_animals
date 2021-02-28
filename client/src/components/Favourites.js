@@ -9,22 +9,21 @@ const Favourites = ({ favouriteAnimals, onFavImageClicked }) => {
             // Create list of clickable animal thumbnails as favourites 
             <img onClick={() => { onFavImageClicked(favouriteAnimal) }}
                 className="fav-image"
-                src={favouriteAnimal.pictures} // TODO :need location of animal picture
-                key={favouriteAnimal._id} // TODO :need animal ID
+                src={favouriteAnimal.pictures}
+                key={favouriteAnimal._id}
                 alt="" height="100px">
             </img>
-            // <li onClick={() => { onFavImageClicked(favouriteAnimal) }} key={favouriteAnimal._id}>
-            //     {favouriteAnimal.animal_name}
-            // </li>
         )
     })
 
     // Render view of a users favourite animals
     return (
-        <div className="favourites-container">
+        <>
             <h2 className="favouriteAnimalsTitle">Favourite Animals</h2>
-            {favouriteAnimalsImages}
-        </div>
+            <div className="fav-container">
+                {favouriteAnimalsImages}
+            </div>
+        </>
     )
 }
 
