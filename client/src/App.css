@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-=======
 .leaflet-container {
-<<<<<<< HEAD
-  width: 50vh;
-=======
-  width: 50vw;
->>>>>>> develop
-  height: 50vh;
+    width: 50vh;
+    height: 50vh;
 }
->>>>>>> develop
+
 *,
 *::before,
 *::after {
@@ -92,11 +86,8 @@ header,
     border: 3px solid grey;
     text-align: center;
 }
-<<<<<<< HEAD
 
 .favourites-container > li {
     display: inline;
     margin: 0.5em;
 }
-=======
->>>>>>> develop
