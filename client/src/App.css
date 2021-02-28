@@ -74,6 +74,12 @@ header {
     height: 100vh;
 }
 
+/* Favourite container hold favourite animal images */
+.fav-image {
+    margin: 1em;
+    border: 3px solid grey;
+}
+
 /* Temporary borders to show page layout */
 header,
 .favourites-container,

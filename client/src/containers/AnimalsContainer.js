@@ -38,13 +38,21 @@ const AnimalsContainer = () => {
         // console.log(favAnimal);
     }
 
+    // Handle what to do when the fav animal in the favourite list is clicked
+    // Update the animalDetail card with the favourite clicked
+    // in the same manner as clicking on an animal from the all animals list
+    const handleFavImageClicked = (favAnimalClicked) => {
+        handleSelectedAnimal(favAnimalClicked);
+
+    }
+
     return (
         <div className="container">
             <header>
                 <h1>Endangered Animals</h1>
             </header>
 
-            <Favourites favouriteAnimals={favouriteAnimals} />
+            <Favourites favouriteAnimals={favouriteAnimals} onFavImageClicked={handleFavImageClicked} />
 
             <div className="map-container">
                 <Map />

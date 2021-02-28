@@ -6,18 +6,14 @@ db.animals.insertMany([
     animal_name: "Giant Panda",
     species: "Ailuropoda melanoleuca",
     pictures: "images/animal_pics/panda.jpeg",
-<<<<<<< HEAD
-    description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population",
-=======
     description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
->>>>>>> develop
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
     population: "2,000",
     status: "Vulnerable",
     fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
     locator: "34.51361534847529, 102.69247855623375",
-},
+  },
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
@@ -29,7 +25,7 @@ db.animals.insertMany([
     status: "Endangered",
     fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!",
     locator: "24.294280580413883, 88.53156685633614",
-},
+  },
   {
     animal_name: "Asian elephant",
     species: "Elephas maximus",
@@ -75,17 +71,11 @@ db.animals.insertMany([
     habitat: "Rainforests",
     population: "110,000",
     status: "Critically engangered",
-<<<<<<< HEAD
-    fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!"
-  },
-  {
-=======
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!",
     locator: "-0.5075762249651253, 112.70316860164365",
   },
 
-    {
->>>>>>> develop
+  {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "images/animal_pics/whale.jpeg",
