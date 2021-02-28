@@ -10,7 +10,7 @@ const FunFactCard = ({ selectedAnimal }) => {
         <>
             <div className="fun-fact-card">
                 <h2>{selectedAnimal.animal_name}</h2>
-                <p>...animal image will go here...</p>
+                <img src="{selectedAnimal.pictures}"/>
                 <p>{selectedAnimal.fun_fact}</p>
             </div>
         </>
