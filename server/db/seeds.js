@@ -5,7 +5,7 @@ db.animals.insertMany([
   {
     animal_name: "Giant Panda",
     species: "Ailuropoda melanoleuca",
-    pictures: "static/images/panda.jpeg",
+    pictures: "images/animal_pics/panda.jpeg",
     description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
@@ -17,7 +17,7 @@ db.animals.insertMany([
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
-    pictures: "static/images/tiger.jpeg",
+    pictures: "images/animal_pics/tiger.jpeg",
     description: "The Bengal tiger lives in the Indian subcontinent. The species is threatened by poaching and loss of habitat caused by climate change. The Bengal tiger is one of the biggest wild cats alive and is the national animal of India and Bangladesh",
     locations: "Most live in India, with a few hundred in Bangladesh, Nepal and Bhutan",
     habitat: "Prime lowland forest, and they also thrive in mangrove swamps",
@@ -29,7 +29,7 @@ db.animals.insertMany([
   {
     animal_name: "Asian elephant",
     species: "Elephas maximus",
-    pictures: "static/images/elephant.jpeg",
+    pictures: "images/animal_pics/elephant.jpeg",
     description: "The Asian elephant is the largest living land animal in Asia. Asian elephants are very sociable and form groups of six to seven related females that are led by the oldest female, the matriarch. It is primarily threatened by loss of habitat and poaching.",
     locations: "Southeast Asia, from India and Nepal in the west to Borneo in the south",
     habitat: "Forests",
@@ -41,7 +41,7 @@ db.animals.insertMany([
   {
     animal_name: "Gorilla",
     species: "Troglodytes gorilla",
-    pictures: "static/images/gorilla.jpeg",
+    pictures: "images/animal_pics/gorilla.jpeg",
     description: "Gorillas are apes that live in the forests of central Sub-Saharan Africa. They are the largest living primates and their DNA is highly similar to that of humans. A female will give birth to only one baby every four to six years, and only three or four over her entire lifetime, which makes it difficult for gorillas to recover from population declines. Both gorilla species have been decreasing in numbers for decades, but have seen some increase in the recent years due to conservation efforts.",
     locations: "Congo",
     habitat: "Tropical or sub-tropical forests",
@@ -53,7 +53,7 @@ db.animals.insertMany([
   {
     animal_name: "Snow leopard",
     species: "Panthera uncia",
-    pictures: "static/images/snow_leopard.jpeg",
+    pictures: "images/animal_pics/snow_leopard.jpeg",
     description: "The snow leopard is a large cat that lives in high mountains. It can climb steep slopes and leap six times the length of its body. The snow leopard habitat range continues to decline due to human settlement and increased use of grazing space",
     locations: "Eastern Afghanistan, Mongolia and western China",
     habitat: " Alpine and subalpine mountain ranges",
@@ -65,7 +65,7 @@ db.animals.insertMany([
   {
     animal_name: "Orangutan",
     species: "Pongo pygmaeus",
-    pictures: "static/images/orangutan.jpeg",
+    pictures: "images/animal_pics/orangutan.jpeg",
     description: "Orangutans are among the world's largest tree-climbing mammals and are closely related to humans. They are extremely patient and intelligent, as well as very observant and inquisitive. Their rainforest habitats are disappearing at an alarming rate because of deforestation and clearing of the land. This makes their extinction in the wild likely in the next 10 years.",
     locations: "Indoneasia and Borneo",
     habitat: "Rainforests",
@@ -78,7 +78,7 @@ db.animals.insertMany([
     {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
-    pictures: "static/images/whale.jpeg",
+    pictures: "images/animal_pics/whale.jpeg",
     description: "Blue whale is the largest animal that has ever existed. Blue whales are at the top of the food chain and play an important role in the health of the marine environment. During the 20th century, the species was almost exterminated due to commercial whaling. It slowly recovered following the global whaling ban, but remains threatened by environmental change, habitat loss and toxics.",
     locations: "All major oceans",
     habitat: "deep water",
@@ -90,7 +90,7 @@ db.animals.insertMany([
   {
     animal_name: "Green sea turtle",
     species: "Chelonia mydas",
-    pictures: "static/images/seaturtle.jpeg",
+    pictures: "images/animal_pics/seaturtle.jpeg",
     description: "Green sea turtles are large air-breathing reptiles and are one of the Earth's most ancient creatures. They play a vital role in the balance of marine habitats. Nearly all species of sea turtle are endangered. They suffer from poaching, over-exploitation and habitat destruction. It is hard to estimate their population as they are very difficult to track.",
     locations: "Atlantic, Pacific and Indian oceans",
     habitat: "Shallow coastal waters",
@@ -102,7 +102,7 @@ db.animals.insertMany([
   {
     animal_name: "Black rhino",
     species: "Diceros bicornis",
-    pictures: "static/images/rhino.jpeg",
+    pictures: "images/animal_pics/rhino.jpeg",
     description: "Populations of black rhinos declined by 98% in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still considered critically endangered because of poaching and black-market trafficking of rhino horn.",
     locations: "Eastern and southern Africa",
     habitat: "Semi-Desert Savannah, Woodlands, Forests, Wetlands",
@@ -114,7 +114,7 @@ db.animals.insertMany([
   {
     animal_name: "African penguin",
     species: "Spheniscus demersus",
-    pictures: "static/images/african_penguin.jpeg",
+    pictures: "images/animal_pics/african_penguin.jpeg",
     description: "The African penguin is the only penguin species of Africa. They can swim with a speed of 20 km/h and can dive up to 130 m deep. The species has been in decline since the beginning of the industrial age because of overfishing, habitat destruction, coastal development and a number of other human influences.",
     locations: "South-western coast of Africa",
     habitat: "Flat sandy areas with sparse or abundant vegetation, or steep, rocky sites with sparse vegetation",
@@ -126,7 +126,7 @@ db.animals.insertMany([
   {
     animal_name: "Red Panda",
     species: "Ailurus fulgens",
-    pictures: "static/images/red_panda.jpeg",
+    pictures: "images/animal_pics/red_panda.jpeg",
     description: "The red panda is a mammal native to the eastern Himalayas and southwestern China. It's about the size of a house cat, but has a long and bushy tail. They are very skillful and acrobatic animals that predominantly stay in trees. The species is listed as Endangered and continues to decline due to the loss of nesting trees, bamboo loss and poaching.",
     locations: "Eastern Himalayas, from Nepal to China",
     habitat: "Temperate forests",
@@ -138,7 +138,7 @@ db.animals.insertMany([
   {
     animal_name: "Polar bear",
     species: "Ursus maritimus",
-    pictures: "static/images/polar_bear.jpeg",
+    pictures: "images/animal_pics/polar_bear.jpeg",
     description: "The polar bear is a large bear classified as a marine mammal because it spends most of its live on the sea ice of the Arctic Ocean. Polar bears have a thick layer of body fat and a water-repellant coat that insulates them from the cold air and water. Their numbers are in decline because of ongoing loss of their sea ice habitat resulting from climate change.",
     locations: "Arctic circle",
     habitat: "Annual sea ice of the Arctic inter islands",
