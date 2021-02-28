@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Favourites from '../components/Favourites';
+
 
 import animalDetail from '../components/AnimalDetail'
 import AnimalsList from '../components/AnimalsList'
