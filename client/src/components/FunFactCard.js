@@ -3,7 +3,7 @@ import React from 'react';
 const FunFactCard = ({ selectedAnimal }) => {
 
     if (!selectedAnimal) {
-        return
+        return (null)
     }
 
     return (
