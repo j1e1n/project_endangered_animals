@@ -15,6 +15,13 @@ const AnimalsContainer = () => {
     const [animals, setAnimals] = useState([]);
     const [selectedAnimal, setSelectedAnimal] = useState(null);
     const [favouriteAnimals, setFavouriteAnimals] = useState([]);
+    
+    //state for Quiz SD
+    // const [currentQuestion, setCurrentQuestion] = useState[0];
+    //Quiz button SD
+    // const handleAnswerButtonClick = () => {
+    //     const nextQuestion = currentQuestion
+    
 
 
     // Read in animals data from own api
@@ -22,6 +29,8 @@ const AnimalsContainer = () => {
         AnimalsService.getAnimals()
             .then(data => setAnimals(data))
     }, [])
+
+
 
 
     // Update state with a single animal object that was selected
@@ -47,7 +56,7 @@ const AnimalsContainer = () => {
             <Favourites favouriteAnimals={favouriteAnimals} />
 
             <div className="map-container">
-                <Map />
+                <Map animals={animals}/>
             </div>
 
             <div className="facts-container">
@@ -68,7 +77,7 @@ const AnimalsContainer = () => {
 
             <div className="quiz-container">
                 <h2>Quiz will go here...</h2>
-                <Quiz />
+                <Quiz selectionAnimal={selectedAnimal} />
             </div>
 
         </div>

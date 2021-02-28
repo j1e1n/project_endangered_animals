@@ -8,19 +8,17 @@ import React from "react";
 //     })
 
 const AnimalsList = ({ animals, onSelectedAnimal }) => {
-    let animalPic;
     const animalListItems = animals.map((animal) => {
 
         return <li onClick={() => { onSelectedAnimal(animal) }} key={animal._id}>
-            {/* If pictures inside public folder */}
-            < img src={animal.pictures} width="50" height="50" alt="animal">
+            < img src={animal.pictures} width="100" height="100" alt="animal" className="animal-list-image">
             </img>
-            {animal.animal_name}
+            {/* {animal.animal_name} */}
         </li >
     })
 
     return (
-        <div>
+        <div className="animal-list-inner-container">
             {animalListItems}
         </div>
     )
