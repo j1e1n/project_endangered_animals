@@ -20,7 +20,11 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                 <p>Habitat: {selectedAnimal.habitat}</p>
                 <p>{selectedAnimal.description}</p>
                 <br />
-                <li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add to Favourite</li>
+                {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
+                {selectedAnimal.favourite ?
+                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Delete Favourite</li>) :
+                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add Favourite</li>)
+                }
             </div>
         </>
     )

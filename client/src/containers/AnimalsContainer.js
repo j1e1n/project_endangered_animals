@@ -42,8 +42,23 @@ const AnimalsContainer = () => {
             favAnimal.favourite = true;
             const newFavAnimalList = [...favouriteAnimals, favAnimal]
             setFavouriteAnimals(newFavAnimalList);
-            // console.log(favAnimal);
+        } else {
+            // If not a new fav animal
+            // - it must already be a fav animal
+            // - therefore user is clicking to delete from fav animals
+            handleDeleteFavouriteAnimal(favAnimal);
         }
+    }
+
+    // Handle delete favourite show
+    const handleDeleteFavouriteAnimal = (favAnimal) => {
+        const newFavAnimalList = favouriteAnimals.filter((animal) => {
+            return animal !== favAnimal
+        })
+
+        // Update the favouriteShows state with the new array (with the item clicked removed)
+        favAnimal.favourite = false
+        setFavouriteAnimals(newFavAnimalList)
     }
 
 
@@ -52,7 +67,6 @@ const AnimalsContainer = () => {
     // in the same manner as clicking on an animal from the all animals list
     const handleFavImageClicked = (favAnimalClicked) => {
         handleSelectedAnimal(favAnimalClicked);
-
     }
 
     return (
