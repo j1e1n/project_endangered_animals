@@ -15,13 +15,23 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                 <br></br>
                 <p>The {selectedAnimal.animal_name} is <b>{selectedAnimal.status}</b>, there are {selectedAnimal.population} left in the world. </p>
                 <br></br>
-                <p>....image will go here....</p>
+                <img src={selectedAnimal.pictures} width="300" height="300" alt={selectedAnimal.animal_name}/>
                 <p>Locations: {selectedAnimal.locations}</p>
                 <p>Habitat: {selectedAnimal.habitat}</p>
                 <p>{selectedAnimal.description}</p>
                 <br />
-                <li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add to Favourite</li>
+                {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
+                {selectedAnimal.favourite ?
+                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Delete Favourite</li>) :
+                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add Favourite</li>)
+                }
             </div>
+            {/* <div>
+                <h4>Quiz test</h4>
+                Question 1: {selectedAnimal.questions[0].q1}
+                <br />
+                Answer 1: {selectedAnimal.questions[0].a1}
+            </div> */}
         </>
     )
 };
