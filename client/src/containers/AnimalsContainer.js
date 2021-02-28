@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Favourites from '../components/Favourites';
-import Map from "../components/Map";
-import Quiz from "../components/Quiz";
+// import AnimalDetail from '../components/AnimalDetail';
+// import AnimalsList from '../components/AnimalsList';
+// import FunFactCard from '../components/FunFactCard';
+import Map from '../components/Map';
+import Quiz from '../components/Map';
+
+
 
 const AnimalsContainer = () => {
 
@@ -42,13 +47,13 @@ const AnimalsContainer = () => {
                 <Map />
             </div>
             <div className="facts-container">
-                <h2>Fun facts will go here...</h2>
+                <h1>Fun facts here</h1>
             </div>
             <div className="animals-list-container">
-                <h2>Animals list will go here...</h2>
+                <h1>list here</h1>
             </div>
             <div className="animal-detail-container">
-                <h2>Animal detail will go here...</h2>
+                <h1>details here</h1>
             </div>
             <div className="quiz-container">
                 < Quiz />
