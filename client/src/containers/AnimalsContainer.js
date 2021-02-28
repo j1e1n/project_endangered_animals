@@ -52,7 +52,7 @@ const AnimalsContainer = () => {
 
             <div className="facts-container">
                 <h1>Fun facts here</h1>
-                {/* <FunFactCard selectedAnimal={selectedAnimal} /> */}
+                <FunFactCard selectedAnimal={selectedAnimal} />
             </div>
 
             <div className="animals-list-container">
