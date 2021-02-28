@@ -1,5 +1,5 @@
 .leaflet-container {
-    width: 50vh;
+    /* width: 50vh; */
     height: 50vh;
 }
 
@@ -24,7 +24,6 @@ body {
 }
 
 .leaflet-container {
-    /* width: 100vw; */
     height: 300px;
 }
 
@@ -56,8 +55,17 @@ header {
 
 .map-container {
     grid-area: map;
+    /* background: pink; */
 }
 
+.map-container h1 {
+    /* background-color: orange; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.map {
+    /* background: orange; */
+}
 .facts-container {
     grid-area: facts;
 }
