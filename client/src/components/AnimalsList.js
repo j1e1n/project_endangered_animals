@@ -11,9 +11,9 @@ const AnimalsList = ({ animals, onSelectedAnimal }) => {
     const animalListItems = animals.map((animal) => {
 
         return <li onClick={() => { onSelectedAnimal(animal) }} key={animal._id}>
-            < img src={animal.pictures} width="50" height="50" alt="animal">
+            < img src={animal.pictures} width="100" height="100" alt="animal" className="animal-list-image">
             </img>
-            {animal.animal_name}
+            {/* {animal.animal_name} */}
         </li >
     })
 

@@ -74,6 +74,17 @@ header {
     overflow: auto;
 }
 
+.animal-list-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1em;
+    border: 3px solid grey;
+}
+
+.animal-list-image:hover {
+    box-shadow: var(--box-shadow-heavy);
+}
+
 .animal-detail-container {
     grid-area: animal-detail;
 }

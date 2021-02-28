@@ -13,7 +13,16 @@ db.animals.insertMany([
     status: "Vulnerable",
     fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
     locator: "34.51361534847529, 102.69247855623375",
+    questions: [{
+      q1: "Question one question here",
+      a1: "Answer one here"
+    },
+    {
+      q2: "Question two question here",
+      a2: "Answer two here"
+    }],
   },
+
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",

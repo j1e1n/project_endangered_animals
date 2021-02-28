@@ -91,7 +91,6 @@ const AnimalsContainer = () => {
             <div className="animals-list-container">
                 <h2>Animals list will go here...</h2>
                 <AnimalsList animals={animals} onSelectedAnimal={handleSelectedAnimal} />
-                <h1>list here</h1>
             </div>
 
             <div className="animal-detail-container">

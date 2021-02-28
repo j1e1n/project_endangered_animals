@@ -26,6 +26,12 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                     (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add Favourite</li>)
                 }
             </div>
+            {/* <div>
+                <h4>Quiz test</h4>
+                Question 1: {selectedAnimal.questions[0].q1}
+                <br />
+                Answer 1: {selectedAnimal.questions[0].a1}
+            </div> */}
         </>
     )
 };
