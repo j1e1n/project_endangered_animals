@@ -1,6 +1,6 @@
 .leaflet-container {
-  width: 50vw;
-  height: 50vh;
+    /* width: 50vh; */
+    height: 50vh;
 }
 *,
 *::before,
@@ -23,7 +23,6 @@ body {
 }
 
 .leaflet-container {
-    /* width: 100vw; */
     height: 300px;
 }
 
@@ -46,7 +45,6 @@ li {
 }
 
 li:hover {
-    font-size: 2em;
     cursor: pointer;
 }
 
@@ -56,8 +54,17 @@ header {
 
 .map-container {
     grid-area: map;
+    /* background: pink; */
 }
 
+.map-container h1 {
+    /* background-color: orange; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.map {
+    /* background: orange; */
+}
 .facts-container {
     grid-area: facts;
 }
@@ -69,16 +76,18 @@ header {
 
 .animal-list-inner-container {
     display: flex;
-    flex-direction: column;
-    height: 300px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: fit-content;
     overflow: auto;
-    border: 3px solid red;
+    justify-content: center;
+    /* border: 3px solid red; */
 }
 
 .animal-list-image {
     width: 150px;
     height: auto;
-    margin-bottom: 1em;
+    margin: 0.5em;
     border: 3px solid grey;
 }
 
@@ -144,4 +153,17 @@ header,
 .favourites-container > li {
     display: inline;
     margin: 0.5em;
+}
+
+.hide {
+    display: none;
+    border: 1px solid red;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.myDIV:hover + .hide {
+    display: block;
+    color: red;
 }
