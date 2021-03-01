@@ -18,6 +18,16 @@ body {
     margin: 0;
 }
 
+.icon-marker {
+    border-radius: 50%;
+    border: 3px solid grey;
+    box-shadow: var(--box-shadow-light);
+}
+
+.icon-marker:hover {
+    box-shadow: var(--box-shadow-heavy);
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;

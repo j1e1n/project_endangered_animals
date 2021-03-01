@@ -4,15 +4,19 @@ import { Icon } from "leaflet";
 
 const Map = ({ animals }) => {
 
-
     // Get all the coords of animal locations and assign to Marker position of Leaflet Map
     const allAnimalCoords = animals.map((animal, index) => {
+
+        // Get the URL for the animal icon location
         let animalIconUrl = animal.pictures
+
         return (
-            < Marker position={animal.locator} key={index}
+            <Marker position={animal.locator} key={index}
+                // Setup new icon for animal marker to go on map
                 icon={new Icon({
                     iconUrl: animalIconUrl,
-                    iconSize: [30, 30]
+                    iconSize: [40, 40],
+                    className: "icon-marker"
                 })}
             >
                 <Popup>
@@ -29,7 +33,8 @@ const Map = ({ animals }) => {
     // Icon options
     const tigerIcon = new Icon({
         iconUrl: '/images/tiger.png',
-        iconSize: [30, 30]
+        iconSize: [30, 30],
+        className: "icon-marker"
     })
 
 
@@ -51,7 +56,7 @@ const Map = ({ animals }) => {
                     />
 
                     {/* Following marker just a homage to our instructor  */}
-                    <Marker position={[55.8642, -4.2518]} icon={tigerIcon}>
+                    <Marker className="icon-marker" position={[55.8642, -4.2518]} icon={tigerIcon}>
                         <Popup>
 
                             <b>Codeclan Tigers</b>
