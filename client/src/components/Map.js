@@ -39,7 +39,7 @@ const Map = ({ animals, onMapAnimalClicked }) => {
 
     // Icon options
     const tigerIcon = new Icon({
-        iconUrl: '/images/tiger.png',
+        iconUrl: '/images/lesser-spotted-steve.png',
         iconSize: [50, 50],
         className: "icon-marker"
     })
@@ -63,8 +63,8 @@ const Map = ({ animals, onMapAnimalClicked }) => {
                     />
 
                     {/* Following marker just a homage to our instructor  */}
-                    <Marker className="icon-marker" position={[55.8642, -4.2518]} icon={tigerIcon}>
-                        <Popup>
+                    <Marker position={[55.8642, -4.2518]} icon={tigerIcon}>
+                        <Popup >
 
                             <b>Codeclan Tigers</b>
                             <p>Steve in his natural habitat consuming quavers and Irn Bru. Temprament varies depending on amount of playtime due to covid restrictions.</p>

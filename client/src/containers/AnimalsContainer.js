@@ -88,7 +88,8 @@ const AnimalsContainer = () => {
     return (
         <div className="container">
             <header>
-                <h1>Endangered Animals</h1>
+                <h1>Endangered Species</h1>
+                {/* <img className="endangered-species-text" src="images/endangered-text.png" alt="" /> */}
             </header>
 
             <div className="favourites-container">
@@ -105,12 +106,13 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="animals-list-container">
-                <h2>Endangered Animals</h2>
+                {/* <h2>Endangered Animals</h2> */}
+                <img className="endangered-species-text" src="images/endangered-text.png" alt="" />
                 <AnimalsList animals={animals} onSelectedAnimal={handleSelectedAnimal} />
             </div>
 
             <div className="animal-detail-container">
-                <h2>Animal detail will go here...</h2>
+                {/* <h2>Animal detail will go here...</h2> */}
                 <AnimalDetail selectedAnimal={selectedAnimal} onFavouriteClick={handleFavouriteClick} />
             </div>
 
