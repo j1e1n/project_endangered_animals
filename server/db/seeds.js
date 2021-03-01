@@ -90,8 +90,7 @@ db.animals.insertMany([
     locator: "-0.5075762249651253, 112.70316860164365",
   },
 
-    {
-
+  {
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "images/animal_pics/whale.jpeg",
