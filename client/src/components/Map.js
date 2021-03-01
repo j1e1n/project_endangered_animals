@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Icon } from "leaflet";
 
 const Map = ({ animals }) => {
 
@@ -18,6 +19,13 @@ const Map = ({ animals }) => {
     const accessToken = "pk.eyJ1IjoiZnJlZHdhcmRvIiwiYSI6ImNrbGxibGluYjA4dGoyd2xsMXMyNGx6dWkifQ.l4K--lGNetKj2ioFbfjS1w";
     const mapUrl = `https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${accessToken}`
 
+    // Icon options
+    const tigerIcon = new Icon({
+        iconUrl: '/images/tiger.png',
+        iconSize: [30, 30]
+    })
+
+
     return (
         <>
             <div className='map'>
@@ -33,17 +41,18 @@ const Map = ({ animals }) => {
                         maxZoom="5"
                         minZoom="2"
                         id="mapbox/streets-v11"
-
                     />
 
 
 
                     {/* Following marker just a homage to our instructor  */}
-                    <Marker position={[55.8642, -4.2518]}>
+                    <Marker position={[55.8642, -4.2518]} icon={tigerIcon}>
                         <Popup>
+
                             <b>Codeclan Tigers</b>
                             <p>Steve in his natural habitat consuming quavers and Irn Bru. Temprament varies depending on amount of playtime due to covid restrictions.</p>
                         </Popup>
+
                     </Marker>
 
                     {/* The following line of code will render all the coordinate points for the animals  */}
