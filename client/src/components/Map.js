@@ -1,6 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Map = ({ animals }) => {
 
@@ -16,17 +15,25 @@ const Map = ({ animals }) => {
 
     })
 
+    const accessToken = "pk.eyJ1IjoiZnJlZHdhcmRvIiwiYSI6ImNrbGxibGluYjA4dGoyd2xsMXMyNGx6dWkifQ.l4K--lGNetKj2ioFbfjS1w";
+    const mapUrl = `https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${accessToken}`
+
     return (
         <>
             <div className='map'>
                 <h1>Interactive Map</h1>
                 {/* <img src={} alt="map loading">Map</img> */}
 
-                <MapContainer center={[55.8642, -4.2518]} zoom={1} scrollWheelZoom={true}>
+                <MapContainer center={[55.8642, -4.2518]} zoom={1} scrollWheelZoom={true} zoomControl={true}>
 
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        url={mapUrl}
+                        maxZoom="5"
+                        minZoom="2"
+                        id="mapbox/streets-v11"
+
                     />
 
 
