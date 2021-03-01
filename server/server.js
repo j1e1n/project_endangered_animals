@@ -17,6 +17,10 @@ MongoClient.connect('mongodb://localhost:27017')
         const animalsRouter = createRouter(animalsCollection);
         app.use('/api/animals', animalsRouter);
 
+        const quizCollection = db.collection('quiz');
+        const quizRouter = createRouter(quizCollection);
+        app.use('/api/quiz', quizRouter);
+
     }).catch(console.err);
 
 app.listen(5000, function () {

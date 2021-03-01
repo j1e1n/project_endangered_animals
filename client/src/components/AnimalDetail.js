@@ -34,7 +34,7 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                 </div>
 
 
-                <img src={selectedAnimal.pictures} width="300" height="300" alt={selectedAnimal.animal_name}/>
+                <img src={selectedAnimal.pictures_detail} width="300" height="300" alt={selectedAnimal.animal_name}/>
                 
                 <p>Locations: {selectedAnimal.locations}</p>
                 <p>Habitat: {selectedAnimal.habitat}</p>

@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+.leaflet-container {
+    /* width: 50vh; */
+    height: 50vh;
+}
+>>>>>>> develop
 *,
 *::before,
 *::after {
