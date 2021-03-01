@@ -326,8 +326,8 @@ db.quiz.insertMany([
  answerOptions: 
        {
         answerText: "A.  Bedtime", isCorrect: false,
-        answerText: "B.  All the time", isCorrect: true,
-        answerText: "C.  Night time", isCorrect: false,
+        answerText: "B.  All the time", isCorrect: false,
+        answerText: "C.  Night time", isCorrect: true,
         answerText: "D.  Sleepy time", isCorrect: false,
   
        },
@@ -340,9 +340,9 @@ db.quiz.insertMany([
  answerOptions: 
        {
         answerText: "A.  They wear warm hats and scarves ", isCorrect: false,
-        answerText: "B.  Lots of jumping about", isCorrect: true,
+        answerText: "B.  Lots of jumping about", isCorrect: false,
         answerText: "C.  Sunbath as often as possible", isCorrect: false,
-        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: false,
+        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: true,
   
        },
 
