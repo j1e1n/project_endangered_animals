@@ -15,14 +15,7 @@ db.animals.insertMany([
     status: "Vulnerable",
     fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
     locator: ["34.51361534847529", "102.69247855623375"],
-    questions: [{
-      q1: "Question one question here",
-      a1: "Answer one here"
-    },
-    {
-      q2: "Question two question here",
-      a2: "Answer two here"
-    }],
+
   },
 
   {
@@ -182,4 +175,178 @@ db.animals.insertMany([
     locator: ["79.45222766702923", "17.030418490108687"],
   }
 ]);
+
+
+
+
+
+
+db.quiz.insertMany([
+{
+  Question: "What to do if a Bengal tiger is chasing you?",
+  
+  answerOptions: 
+      {
+    answerText: "A.  Back away slowly", isCorrect: true,
+    answerText: "B.  Look it in the eye", isCorrect: false,
+    answerText: "C.  Start singing the lion king theme tune", isCorrect: false,
+    answerText: "D.  Pretend to be a tiger with a mighty roar", isCorrect: false,
+      },
+},  
+
+{      
+    Question: "How to elephants communicate?",
+     
+   answerOptions: 
+         {
+          answerText: "A.  They’re telepathic ", isCorrect: false,
+          answerText: "B.  They communicate via rumbles, bellow and moans", isCorrect: true,
+          answerText: "C.  They do the elephant dance", isCorrect: false,
+          answerText: "D.  They use sign language", isCorrect: false,
+    
+         },
+
+},
+
+{      
+  Question: "How many Giant Panda’s are left?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  1864", isCorrect: true,
+        answerText: "B.  1800", isCorrect: false,
+        answerText: "C.  1709", isCorrect: false,
+        answerText: "D.  3233", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "What is a group of Gorilla’s called?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  A pack", isCorrect: false,
+        answerText: "B.  Troops or bands", isCorrect: true,
+        answerText: "C.  The primate massive", isCorrect: false,
+        answerText: "D.  Backstreet boys", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "How far can a snow leopard jump?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  20 feet", isCorrect: true,
+        answerText: "B.  10 feet", isCorrect: false,
+        answerText: "C.  50 feet", isCorrect: false,
+        answerText: "D.  80 feet", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "Which one of these places are you most likely to find a Orangutan?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  Edinburgh", isCorrect: false,
+        answerText: "B.  Codeclan", isCorrect: false,
+        answerText: "C.  South-east Asia", isCorrect: true,
+        answerText: "D.  Canada", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "Where does the blue whale live?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  Aberdeen", isCorrect: false,
+        answerText: "B.  Loch Lomond", isCorrect: false,
+        answerText: "C.  The River", isCorrect: false,
+        answerText: "D.  The Ocean", isCorrect: true,
+  
+       },
+
+},
+
+{      
+  Question: "What is the lifespan of a green sea turtle?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  A.	Up to 20 years", isCorrect: false,
+        answerText: "B.  A.	Up to 80 years", isCorrect: true,
+        answerText: "C.  A.	Up to 200 years", isCorrect: false,
+        answerText: "D.  A.	Up to 400 years", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "What is a group of Rhinos called?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  A pack", isCorrect: false,
+        answerText: "B.  The dirty horn gang", isCorrect: false,
+        answerText: "C.  A smoke", isCorrect: false,
+        answerText: "D.  A crash", isCorrect: true,
+  
+       },
+
+},
+
+{      
+  Question: "How fast can a African penguin swim?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  A.	110 kph", isCorrect: false,
+        answerText: "B.  A.	50 kph", isCorrect: false,
+        answerText: "C.  A.	80 kph", isCorrect: false,
+        answerText: "D.  A.	20 kph", isCorrect: true,
+  
+       },
+
+}, 
+
+{      
+  Question: "When do red pandas sleep?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  Bedtime", isCorrect: false,
+        answerText: "B.  All the time", isCorrect: true,
+        answerText: "C.  Night time", isCorrect: false,
+        answerText: "D.  Sleepy time", isCorrect: false,
+  
+       },
+
+},
+
+{      
+  Question: "How do polar bears keep warm?",
+   
+ answerOptions: 
+       {
+        answerText: "A.  They wear warm hats and scarves ", isCorrect: false,
+        answerText: "B.  Lots of jumping about", isCorrect: true,
+        answerText: "C.  Sunbath as often as possible", isCorrect: false,
+        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: false,
+  
+       },
+
+}
+]);
+
 
