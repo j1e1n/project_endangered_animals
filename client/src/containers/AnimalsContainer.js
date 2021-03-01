@@ -89,7 +89,7 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="animals-list-container">
-                <h2>Animals list will go here...</h2>
+                <h2>Endangered Animals</h2>
                 <AnimalsList animals={animals} onSelectedAnimal={handleSelectedAnimal} />
             </div>
 
