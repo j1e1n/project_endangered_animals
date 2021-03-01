@@ -69,6 +69,13 @@ const AnimalsContainer = () => {
         handleSelectedAnimal(favAnimalClicked);
     }
 
+    // Handle what to do when the icon on map is clicked
+    const handleMapImageClicked = (mapAnimalClicked) => {
+        // console.log("Map animal Clicked", mapAnimalClicked);
+        handleSelectedAnimal(mapAnimalClicked)
+    }
+
+
     return (
         <div className="container">
             <header>
@@ -80,7 +87,7 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="map-container">
-                <Map animals={animals} />
+                <Map animals={animals} onMapAnimalClicked={handleMapImageClicked} />
             </div>
 
             <div className="facts-container">

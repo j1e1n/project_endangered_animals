@@ -2,7 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from "leaflet";
 
-const Map = ({ animals }) => {
+const Map = ({ animals, onMapAnimalClicked }) => {
 
     // Get all the coords of animal locations and assign to Marker position of Leaflet Map
     const allAnimalCoords = animals.map((animal, index) => {
@@ -11,16 +11,23 @@ const Map = ({ animals }) => {
         let animalIconUrl = animal.pictures
 
         return (
-            <Marker position={animal.locator} key={index}
+            <Marker
+                eventHandlers={{
+                    click: (e) => {
+                        // console.log("Marker clicked", e);
+                        onMapAnimalClicked(animal);
+                    },
+                }}
+                position={animal.locator} key={index}
                 // Setup new icon for animal marker to go on map
                 icon={new Icon({
                     iconUrl: animalIconUrl,
-                    iconSize: [40, 40],
+                    iconSize: [50, 50],
                     className: "icon-marker"
                 })}
             >
                 <Popup>
-                    <b>{animal.animal_name}</b>
+                    <b className="click-animal-map-icon">{animal.animal_name}</b>
                 </Popup>
             </Marker >
         )
@@ -33,7 +40,7 @@ const Map = ({ animals }) => {
     // Icon options
     const tigerIcon = new Icon({
         iconUrl: '/images/tiger.png',
-        iconSize: [30, 30],
+        iconSize: [50, 50],
         className: "icon-marker"
     })
 
