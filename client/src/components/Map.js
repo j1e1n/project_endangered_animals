@@ -4,10 +4,17 @@ import { Icon } from "leaflet";
 
 const Map = ({ animals }) => {
 
+
     // Get all the coords of animal locations and assign to Marker position of Leaflet Map
     const allAnimalCoords = animals.map((animal, index) => {
+        let animalIconUrl = animal.pictures
         return (
-            < Marker position={animal.locator} key={index} >
+            < Marker position={animal.locator} key={index}
+                icon={new Icon({
+                    iconUrl: animalIconUrl,
+                    iconSize: [30, 30]
+                })}
+            >
                 <Popup>
                     <b>{animal.animal_name}</b>
                 </Popup>
@@ -42,8 +49,6 @@ const Map = ({ animals }) => {
                         minZoom="2"
                         id="mapbox/streets-v11"
                     />
-
-
 
                     {/* Following marker just a homage to our instructor  */}
                     <Marker position={[55.8642, -4.2518]} icon={tigerIcon}>
