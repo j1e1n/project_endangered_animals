@@ -14,8 +14,17 @@ db.animals.insertMany([
     population: "2,000",
     status: "Vulnerable",
     fun_fact: "When a panda is born it is completely pink and hairless! The black and white fur starts growing when they are around three weeks old.",
-    locator: "34.51361534847529, 102.69247855623375",
-},
+    locator: ["34.51361534847529", "102.69247855623375"],
+    questions: [{
+      q1: "Question one question here",
+      a1: "Answer one here"
+    },
+    {
+      q2: "Question two question here",
+      a2: "Answer two here"
+    }],
+  },
+
   {
     animal_name: "Bengal tiger",
     species: "Panthera tigris",
@@ -28,8 +37,8 @@ db.animals.insertMany([
     population: "2,500",
     status: "Endangered",
     fun_fact: "Bengal tigers each have a unique pattern on their fur, no two have the same stripes!",
-    locator: "24.294280580413883, 88.53156685633614",
-},
+    locator: ["24.294280580413883", "88.53156685633614"],
+  },
   {
     animal_name: "Asian elephant",
     species: "Elephas maximus",
@@ -42,7 +51,7 @@ db.animals.insertMany([
     population: "35,000",
     status: "Endangered",
     fun_fact: "Throughout their lifetime, Asian elephants go through six sets of teeth!",
-    locator: "11.901294670854883, 78.8818769644848",
+    locator: ["11.901294670854883", "78.8818769644848"],
   },
   {
     animal_name: "Gorilla",
@@ -56,7 +65,7 @@ db.animals.insertMany([
     population: "100,000?",
     status: "Critically endangered",
     fun_facts: "Some gorillas in captivity have learned to communicate with humans using sign language!",
-    locator: "-0.46355795092012997, 23.552201804629817",
+    locator: ["-0.46355795092012997", "23.552201804629817"],
   },
   {
     animal_name: "Snow leopard",
@@ -70,7 +79,7 @@ db.animals.insertMany([
     population: "3,500 - 7,000",
     status: "Vulnerable",
     fun_fact: "Snow leopards are nicknamed 'ghosts of the mountain' because they are so rarely seen and spend most of their lives in solitude!",
-    locator: "36.721157123856294, 75.88707554071537",
+    locator: ["36.721157123856294", "75.88707554071537"],
   },
   {
     animal_name: "Orangutan",
@@ -84,10 +93,11 @@ db.animals.insertMany([
     population: "110,000",
     status: "Critically engangered",
     fun_fact: "Orangutans create tools using twigs to collect termites from holes to eat!",
-    locator: "-0.5075762249651253, 112.70316860164365",
+    locator: ["-0.5075762249651253", "112.70316860164365"],
   },
 
     {
+  
     animal_name: "Blue whale",
     species: "Balaenoptera musculus",
     pictures: "images/animal_pics/whale.jpeg",
@@ -99,7 +109,7 @@ db.animals.insertMany([
     population: "10,000-25,000",
     status: "Endangered",
     fun_fact: "In the wild, blue whales can live as long as 90 years!",
-    locator: "30.07234753595548, -129.88357395959068",
+    locator: ["30.07234753595548", "-129.88357395959068"],
   },
   {
     animal_name: "Green sea turtle",
@@ -113,7 +123,7 @@ db.animals.insertMany([
     population: "Estimated ay 90,000 nesting females",
     status: "Endangered",
     fun_fact: "Green sea turtles can hold their breath underwater for 5 hours!",
-    locator: "-5.7953812553865705, 70.30973006900552",
+    locator: ["-5.7953812553865705", "70.30973006900552"],
   },
   {
     animal_name: "Black rhino",
@@ -127,7 +137,7 @@ db.animals.insertMany([
     population: "5,000",
     status: "Critically endangered",
     fun_fact: "Black rhinos run on their toes and can reach speeds of 35 miles per hour!",
-    locator: "-22.715242443569938, 30.07906914046745",
+    locator: ["-22.715242443569938", "30.07906914046745"],
   },
   {
     animal_name: "African penguin",
@@ -141,7 +151,7 @@ db.animals.insertMany([
     population: "50,000",
     status: "Endangered",
     fun_fact: "African penguins can sleep while standing up!",
-    locator: "-34.24898862515669, 25.302979680633296",
+    locator: ["-34.24898862515669", "25.302979680633296"],
   },
   {
     animal_name: "Red Panda",
@@ -155,7 +165,7 @@ db.animals.insertMany([
     population: "10,000",
     status: "Endangered",
     fun_fact: "Red pandas lick themselves clean, just like cats do!",
-    locator: "28.01398012500806, 90.80251459985779",
+    locator: ["28.01398012500806", "90.80251459985779"],
   },
   {
     animal_name: "Polar bear",
@@ -169,7 +179,7 @@ db.animals.insertMany([
     population: "Estimated at 30,000",
     status: "Vulnerable",
     fun_fact: "Polar bears have black skin under their white fur coats, this helps them to keep heat from the sun!",
-    locator: "79.45222766702923, 17.030418490108687",
+    locator: ["79.45222766702923", "17.030418490108687"],
   }
 ]);
 
