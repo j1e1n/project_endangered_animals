@@ -8,18 +8,23 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
         return (null)
     }
 
-  
+
 
     return (
         <>
             <div className="animal-detail">
                 <h2>{selectedAnimal.animal_name}</h2>
+                {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
+                {selectedAnimal.favourite ?
+                    (<i className="fas fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>) :
+                    (<i className="far fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>)
+                }
                 <p>Scientific name: {selectedAnimal.species}</p>
                 <p>There are {selectedAnimal.population} {selectedAnimal.animal_name} left in the world.</p>
                 <div className="myDIV">
                     <h3><b>{selectedAnimal.status}</b></h3>
-                    
-                </div>   
+
+                </div>
                 <div className="hide">
                     <h4>IUCN Red List Categories</h4>
                     <ul>
@@ -34,17 +39,12 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
                 </div>
 
 
-                <img src={selectedAnimal.pictures} width="300" height="300" alt={selectedAnimal.animal_name}/>
-                
+                <img src={selectedAnimal.pictures_detail} width="300" height="300" alt={selectedAnimal.animal_name} />
+
                 <p>Locations: {selectedAnimal.locations}</p>
                 <p>Habitat: {selectedAnimal.habitat}</p>
                 <p>{selectedAnimal.description}</p>
                 <br />
-                {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
-                {selectedAnimal.favourite ?
-                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Delete Favourite</li>) :
-                    (<li onClick={() => { onFavouriteClick(selectedAnimal) }}  >Add Favourite</li>)
-                }
             </div>
             {/* <div>
                 <h4>Quiz test</h4>

@@ -15,22 +15,40 @@ const AnimalsContainer = () => {
     const [animals, setAnimals] = useState([]);
     const [selectedAnimal, setSelectedAnimal] = useState(null);
     const [favouriteAnimals, setFavouriteAnimals] = useState([]);
-    
+
     //state for Quiz SD
     // const [currentQuestion, setCurrentQuestion] = useState[0];
     //Quiz button SD
     // const handleAnswerButtonClick = () => {
     //     const nextQuestion = currentQuestion
-    
 
 
-    // Read in animals data from own api
+    // Read in animals data from own api then load any favourites stored in localstorage
     useEffect(() => {
         AnimalsService.getAnimals()
             .then(data => setAnimals(data))
+        // .then(getLocalStorageFavAnimals)
     }, [])
 
 
+    // Retrieve any favourite animals already stored in localstorage
+    // and put them into favourite animals state
+    const getLocalStorageFavAnimals = () => {
+        console.log("Loading local storage items");
+        // window.localStorage.removeItem('lsFavAnimals');
+        const restoredData = JSON.parse(window.localStorage.getItem("lsFavAnimals"));
+        if (restoredData !== null) {
+            setFavouriteAnimals(restoredData);
+        }
+    }
+
+    // Store favourite animals into localstorage when fav animals list updates
+    const saveLocalStorageFavAnimals = () => {
+        console.log("Saving local storage items");
+        // window.localStorage.removeItem('lsFavAnimals');
+        window.localStorage.setItem("lsFavAnimals", JSON.stringify(favouriteAnimals));
+
+    }
 
 
     // Update state with a single animal object that was selected
@@ -57,15 +75,19 @@ const AnimalsContainer = () => {
             // - therefore user is clicking to delete from fav animals
             handleDeleteFavouriteAnimal(favAnimal);
         }
+
+        // Update the local storage of favourite animals
+        // window.localStorage.removeItem('lsFavAnimals');
+        // saveLocalStorageFavAnimals();
     }
 
-    // Handle delete favourite show
+    // Handle delete favourite animal
     const handleDeleteFavouriteAnimal = (favAnimal) => {
         const newFavAnimalList = favouriteAnimals.filter((animal) => {
             return animal !== favAnimal
         })
 
-        // Update the favouriteShows state with the new array (with the item clicked removed)
+        // Update the favouriteAnimals state with the new array (with the item clicked removed)
         favAnimal.favourite = false
         setFavouriteAnimals(newFavAnimalList)
     }
@@ -78,10 +100,18 @@ const AnimalsContainer = () => {
         handleSelectedAnimal(favAnimalClicked);
     }
 
+    // Handle what to do when the icon on map is clicked
+    const handleMapImageClicked = (mapAnimalClicked) => {
+        // console.log("Map animal Clicked", mapAnimalClicked);
+        handleSelectedAnimal(mapAnimalClicked)
+    }
+
+
     return (
         <div className="container">
             <header>
-                <h1>Endangered Animals</h1>
+                <h1>Endangered Species</h1>
+                {/* <img className="endangered-species-text" src="images/endangered-text.png" alt="" /> */}
             </header>
 
             <div className="favourites-container">
@@ -89,21 +119,22 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="map-container">
-                <Map animals={animals}/>
+                <Map animals={animals} onMapAnimalClicked={handleMapImageClicked} />
             </div>
 
             <div className="facts-container">
                 <h1>Fun facts here</h1>
-                {/* <FunFactCard selectedAnimal={selectedAnimal} /> */}
+                <FunFactCard selectedAnimal={selectedAnimal} />
             </div>
 
             <div className="animals-list-container">
-                <h2>Endangered Animals</h2>
+                {/* <h2>Endangered Animals</h2> */}
+                <img className="endangered-species-text" src="images/endangered-text.png" alt="" />
                 <AnimalsList animals={animals} onSelectedAnimal={handleSelectedAnimal} />
             </div>
 
             <div className="animal-detail-container">
-                <h2>Animal detail will go here...</h2>
+                {/* <h2>Animal detail will go here...</h2> */}
                 <AnimalDetail selectedAnimal={selectedAnimal} onFavouriteClick={handleFavouriteClick} />
             </div>
 

@@ -57,7 +57,7 @@ db.animals.insertMany([
     habitat: "Tropical or sub-tropical forests",
     population: "100,000?",
     status: "Critically endangered",
-    fun_facts: "Some gorillas in captivity have learned to communicate with humans using sign language!",
+    fun_fact: "Some gorillas in captivity have learned to communicate with humans using sign language!",
     locator: ["-0.46355795092012997", "23.552201804629817"],
   },
   {
@@ -151,7 +151,7 @@ db.animals.insertMany([
     species: "Ailurus fulgens",
     pictures: "images/animal_pics/red_panda.jpeg",
     pictures_detail: "images/animal_detail_pics/redpanda_detail.jpeg",
-    pictures_fact: "images/animal_fact_pics/redpanda_fact.jpeg",
+    pictures_fact: "images/animal_fact_pics/redpandafact.jpeg",
     description: "The red panda is a mammal native to the eastern Himalayas and southwestern China. It's about the size of a house cat, but has a long and bushy tail. They are very skillful and acrobatic animals that predominantly stay in trees. The species is listed as Endangered and continues to decline due to the loss of nesting trees, bamboo loss and poaching.",
     locations: "Eastern Himalayas, from Nepal to China",
     habitat: "Temperate forests",
@@ -316,6 +316,7 @@ db.quiz.insertMany([
   Question: "When do red pandas sleep?",
    
  answerOptions: 
+<<<<<<< HEAD
        [
         "A.  Bedtime",
         "B.  All the time",
@@ -323,12 +324,23 @@ db.quiz.insertMany([
         "D.  Sleepy time"
        ],
        correct: 1
+=======
+       {
+        answerText: "A.  Bedtime", isCorrect: false,
+        answerText: "B.  All the time", isCorrect: false,
+        answerText: "C.  Night time", isCorrect: true,
+        answerText: "D.  Sleepy time", isCorrect: false,
+  
+       },
+
+>>>>>>> develop
 },
 
 {      
   Question: "How do polar bears keep warm?",
    
  answerOptions: 
+<<<<<<< HEAD
        [
         "A.  They wear warm hats and scarves ",
         "B.  Lots of jumping about",
@@ -336,6 +348,16 @@ db.quiz.insertMany([
         "D.  They have a thick layer of fat and a water-repellant coat"
        ],
        correct: 1
+=======
+       {
+        answerText: "A.  They wear warm hats and scarves ", isCorrect: false,
+        answerText: "B.  Lots of jumping about", isCorrect: false,
+        answerText: "C.  Sunbath as often as possible", isCorrect: false,
+        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: true,
+  
+       },
+
+>>>>>>> develop
 }
 ]);
 
