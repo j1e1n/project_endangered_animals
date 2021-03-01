@@ -316,7 +316,6 @@ db.quiz.insertMany([
   Question: "When do red pandas sleep?",
    
  answerOptions: 
-<<<<<<< HEAD
        [
         "A.  Bedtime",
         "B.  All the time",
@@ -324,23 +323,12 @@ db.quiz.insertMany([
         "D.  Sleepy time"
        ],
        correct: 1
-=======
-       {
-        answerText: "A.  Bedtime", isCorrect: false,
-        answerText: "B.  All the time", isCorrect: false,
-        answerText: "C.  Night time", isCorrect: true,
-        answerText: "D.  Sleepy time", isCorrect: false,
-  
-       },
-
->>>>>>> develop
 },
 
 {      
   Question: "How do polar bears keep warm?",
    
  answerOptions: 
-<<<<<<< HEAD
        [
         "A.  They wear warm hats and scarves ",
         "B.  Lots of jumping about",
@@ -348,16 +336,6 @@ db.quiz.insertMany([
         "D.  They have a thick layer of fat and a water-repellant coat"
        ],
        correct: 1
-=======
-       {
-        answerText: "A.  They wear warm hats and scarves ", isCorrect: false,
-        answerText: "B.  Lots of jumping about", isCorrect: false,
-        answerText: "C.  Sunbath as often as possible", isCorrect: false,
-        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: true,
-  
-       },
-
->>>>>>> develop
 }
 ]);
 
