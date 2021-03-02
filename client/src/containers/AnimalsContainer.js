@@ -153,11 +153,14 @@ const AnimalsContainer = () => {
                 <AnimalDetail selectedAnimal={selectedAnimal} onFavouriteClick={handleFavouriteClick} />
             </div>
 
+            <div className="footer">
+
+            </div>
+
             <div className="quiz-container">
                 {/* <h2>Quiz will go here...</h2> */}
                 <Quiz />
             </div>
-
 
             <div className="footer">
 
