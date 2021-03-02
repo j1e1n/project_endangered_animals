@@ -8,7 +8,7 @@ const Map = ({ animals, onMapAnimalClicked }) => {
     const allAnimalCoords = animals.map((animal, index) => {
 
         // Get the URL for the animal icon location
-        let animalIconUrl = animal.pictures
+        let animalIconUrl = animal.pictures_locator
 
         return (
             <Marker

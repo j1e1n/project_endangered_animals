@@ -27,7 +27,7 @@ const Quiz = () => {
     }
 
     const answerOptions = questions[currentQuestion].answerOptions.map((option, index) => {
-            return <li key={index} onClick={() => {handleAnswerClick(index)}}>{option}</li>
+            return <li className='answer-options' key={index} onClick={() => {handleAnswerClick(index)}}>{option}</li>
     })
 
 
@@ -53,18 +53,20 @@ const Quiz = () => {
     return(
         <>
         <div className='quiz'>
+        <div className='quiz-header-container'>
         <h1>Quiz</h1>
+        </div>
         {/* <img src={}>Quiz</img> */}
 
         {finished ? (
             <div>
-                <p>You scored {score} out of {(questions.length)}</p>
+                <p> <span className='score' >You scored {score} out of {(questions.length)} </span> </p>
                 <button onClick={handleRetry}>Retry</button>
             </div>
         ) : (
         <div>
             <p>Score: {score}</p>
-            <p>{questions[currentQuestion].Question}</p>
+            <p className='question-text' >{questions[currentQuestion].Question}</p>
             <ul>
                 {answerOptions}
             </ul>

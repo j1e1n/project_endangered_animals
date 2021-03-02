@@ -44,7 +44,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px auto 1fr 1fr 1fr;
+    grid-template-rows: 200px auto 1fr 1fr 1fr;
     grid-template-areas:
         "header header"
         "favourites favourites"
@@ -80,11 +80,12 @@ header {
     background-size: cover;
     background-position: center;
     color: rgba(218, 35, 175, 0.961);
-    font-size: 1.5em;
+    font-size: 2.0em;
 }
 
 header h1 {
     margin-bottom: 2em;
+    margin-top: 0.1em;
 }
 .endangered-species-text {
     margin-top: 1em;
@@ -130,6 +131,7 @@ header h1 {
 
 .fun-fact-card img {
     border-radius: 25px;
+    box-shadow: var(--box-shadow-light); 
 }
 .animals-list-container {
     grid-area: animals-list;
@@ -173,9 +175,18 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
+.animal-detail > p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .quiz-container {
     grid-area: quiz;
-    background: rgba(218, 35, 175, 0.7);
+    background-image: url(./static/images/jungle-header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background: #e4ecc2; */
+    /* background: rgba(218, 35, 175, 0.7); */
 }
 
 .footer {
@@ -209,6 +220,7 @@ header h1 {
     display: flex;
     overflow-x: auto;
     background-color: orange;
+    border-radius: 25px;
     /* width: 80%;
     margin: auto;
     justify-items: center; */
@@ -293,5 +305,59 @@ header,
 }
 
 .animal-detail img {
+    border-radius: 25px;
+    box-shadow: var(--box-shadow-light); 
+}
+
+.quiz h1 {
+    background-color: orange;
+    margin-top: 1em;
+    border-radius: 25px;
+    width: fit-content;
+    margin-left: 20em;
+    margin-right: 20em;
+    padding: 0.3em 0.5em;
+
+}
+
+.answer-options {
+   
+    background-color: orange;
+    margin: 1em;
+    border-radius: 25px;
+    /* width: fit-content; */
+    margin-left: 20em;
+    margin-right: 22em;
+    padding: 0.3em 0.5em;
+
+}
+
+.quiz-header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.question-text {
+    font-size: 1.5em;
+    padding-bottom: 1.6em;
+}
+
+button {
+    padding: 0.5em 1.5em;
+    margin-bottom: 1em;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-family: "RocknRoll One", sans-serif;
+    margin-top: 1em
+}
+
+.score {
+    /* color: rgba(218, 35, 175, 0.961); */
+    color: white;
+    background-color: green;
+    width: auto;
+    padding: 1em;
     border-radius: 25px;
 }
