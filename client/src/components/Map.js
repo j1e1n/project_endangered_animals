@@ -48,7 +48,7 @@ const Map = ({ animals, onMapAnimalClicked }) => {
     return (
         <>
             <div className='map'>
-                <h1>Interactive Map</h1>
+                <h1 className="map-header-text">Interactive Map</h1>
                 {/* <img src={} alt="map loading">Map</img> */}
 
                 <MapContainer center={[55.8642, -4.2518]} zoom={1} scrollWheelZoom={true} zoomControl={true}>
@@ -65,9 +65,9 @@ const Map = ({ animals, onMapAnimalClicked }) => {
                     {/* Following marker just a homage to our instructor  */}
                     <Marker position={[55.8642, -4.2518]} icon={tigerIcon}>
                         <Popup >
-
-                            <b>Codeclan Tigers</b>
-                            <p>Steve in his natural habitat consuming quavers and Irn Bru. Temprament varies depending on amount of playtime due to covid restrictions.</p>
+                            <b className="click-animal-map-icon">Codeclan Tigers - G23 Posse!</b>
+                            <p className="click-animal-map-instructor">Steve in his natural habitat consuming quavers and Irn Bru. Temperament varies depending on amount of playtime due to covid restrictions.</p>
+                            <p className="click-animal-map-instructor">Are you in the right folder?  Did you save the file?  Throw us a bone guys!</p>
                         </Popup>
 
                     </Marker>

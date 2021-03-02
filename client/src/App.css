@@ -18,6 +18,7 @@
 body {
     margin: 0;
     font-family: "RocknRoll One", sans-serif;
+    background: #e4ecc2;
 }
 
 .icon-marker {
@@ -35,6 +36,18 @@ body {
     box-shadow: var(--box-shadow-light);
     color: white;
     font-weight: bold;
+    text-align: center;
+    /* cursor: pointer; */
+    border-radius: 25px;
+    padding: 0.5em 1em;
+}
+
+.click-animal-map-instructor {
+    background: var(--tertiary-color);
+    box-shadow: var(--box-shadow-light);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
     text-align: center;
     /* cursor: pointer; */
     border-radius: 25px;
@@ -60,10 +73,12 @@ body {
     height: 50vh;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    box-shadow: var(--box-shadow-light);
     /* border-radius: 25px;
     grid-area: map; */
     /* width: 50vw; */
     /* box-shadow: var(--box-shadow-light); */
+    background: #75cff0;
 }
 
 li {
@@ -80,7 +95,7 @@ header {
     background-size: cover;
     background-position: center;
     color: rgba(218, 35, 175, 0.961);
-    font-size: 2.0em;
+    font-size: 2em;
 }
 
 header h1 {
@@ -89,12 +104,14 @@ header h1 {
 }
 .endangered-species-text {
     margin-top: 1em;
-    /* opacity: 0.8; */
 }
 
 .map-container {
     grid-area: map;
     border-radius: 25px;
+    background: #75cff0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .map-container h1 {
@@ -102,6 +119,16 @@ header h1 {
     margin-bottom: 0;
     background: #75cff0;
     color: white;
+}
+
+.map-header-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #75cff0;
+    color: white;
+    padding-left: 1em;
+    border: 1px solid red;
+    border: none;
 }
 
 .facts-container {
@@ -131,7 +158,7 @@ header h1 {
 
 .fun-fact-card img {
     border-radius: 25px;
-    box-shadow: var(--box-shadow-light); 
+    box-shadow: var(--box-shadow-light);
 }
 .animals-list-container {
     grid-area: animals-list;
@@ -158,8 +185,9 @@ header h1 {
     width: 150px;
     height: auto;
     margin: 0.5em;
-    border: 3px solid var(--tertiary-color);
+    /* border: 3px solid var(--tertiary-color); */
     border-radius: 25px;
+    box-shadow: var(--box-shadow-light);
 }
 
 .animal-list-image:hover {
@@ -185,8 +213,6 @@ header h1 {
     background-image: url(./static/images/jungle-header-background.jpg);
     background-size: cover;
     background-position: center;
-    /* background: #e4ecc2; */
-    /* background: rgba(218, 35, 175, 0.7); */
 }
 
 .footer {
@@ -202,15 +228,12 @@ header h1 {
 .favourites-container {
     grid-area: favourites;
     text-align: left;
-    /* background-color: orange; */
-    /* background-image: url(./static/images/jungle-header-background.jpg); */
     background: orange;
     background-size: cover;
     background-position: bottom;
 }
 
 .favouriteAnimalsTitle {
-    /* color: rgba(218, 35, 175, 0.961); */
     color: green;
     text-align: left;
     padding-left: 1em;
@@ -221,9 +244,6 @@ header h1 {
     overflow-x: auto;
     background-color: orange;
     border-radius: 25px;
-    /* width: 80%;
-    margin: auto;
-    justify-items: center; */
 }
 
 .fav-image {
@@ -302,11 +322,23 @@ header,
     border-radius: 25px;
     padding: 0.5em 1.5em;
     cursor: pointer;
+    box-shadow: var(--box-shadow-light);
 }
 
 .animal-detail img {
     border-radius: 25px;
-    box-shadow: var(--box-shadow-light); 
+    box-shadow: var(--box-shadow-light);
+}
+
+.quiz-header-container {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.quiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .quiz h1 {
@@ -316,25 +348,21 @@ header,
     width: fit-content;
     margin-left: 20em;
     margin-right: 20em;
-    padding: 0.3em 0.5em;
-
+    padding: 0.3em 1.5em;
+    box-shadow: var(--box-shadow-light);
 }
 
 .answer-options {
-   
     background-color: orange;
     margin: 1em;
     border-radius: 25px;
     /* width: fit-content; */
     margin-left: 20em;
     margin-right: 22em;
+    /* margin-left: 0;
+    margin-right: 0; */
+    /* width: auto; */
     padding: 0.3em 0.5em;
-
-}
-
-.quiz-header-container {
-    display: flex;
-    justify-content: center;
 }
 
 .question-text {
@@ -350,7 +378,8 @@ button {
     border-radius: 25px;
     font-size: 1em;
     font-family: "RocknRoll One", sans-serif;
-    margin-top: 1em
+    margin-top: 1em;
+    box-shadow: var(--box-shadow-light);
 }
 
 .score {
@@ -360,4 +389,5 @@ button {
     width: auto;
     padding: 1em;
     border-radius: 25px;
+    box-shadow: var(--box-shadow-light);
 }

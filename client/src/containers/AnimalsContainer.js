@@ -26,7 +26,10 @@ const AnimalsContainer = () => {
     // Read in animals data from own api then load any favourites stored in localstorage
     useEffect(() => {
         AnimalsService.getAnimals()
-            .then(data => setAnimals(data))
+            .then((data) => {
+                setAnimals(data)
+                setSelectedAnimal(data[0])
+            })
             .then(getLocalStorageFavAnimals)
     }, [])
 
@@ -34,7 +37,7 @@ const AnimalsContainer = () => {
     // Retrieve any favourite animals already stored in localstorage
     // and put them into favourite animals state
     const getLocalStorageFavAnimals = () => {
-        console.log("Loading local storage items");
+        // console.log("Loading local storage items");
         // window.localStorage.removeItem('lsFavAnimals');
         const restoredData = JSON.parse(window.localStorage.getItem("lsFavAnimals"));
         if (restoredData !== null) {
@@ -77,8 +80,8 @@ const AnimalsContainer = () => {
             const newFavAnimalList = [...favouriteAnimals, favAnimal]
 
             setFavouriteAnimals(newFavAnimalList);   // is this setting??
-            console.log("check 1:", newFavAnimalList);
-            console.log("check 1.5:", favouriteAnimals);
+            // console.log("check 1:", newFavAnimalList);
+            // console.log("check 1.5:", favouriteAnimals);
 
             window.localStorage.setItem("lsFavAnimals", JSON.stringify(newFavAnimalList));
         } else {
@@ -121,7 +124,6 @@ const AnimalsContainer = () => {
         handleSelectedAnimal(mapAnimalClicked)
     }
 
-
     return (
         <div className="container">
             <header>
@@ -133,9 +135,9 @@ const AnimalsContainer = () => {
                 <Favourites favouriteAnimals={favouriteAnimals} onFavImageClicked={handleFavImageClicked} />
             </div>
 
-            <div className="map-container">
-                <Map animals={animals} onMapAnimalClicked={handleMapImageClicked} />
-            </div>
+            {/* <div className="map-container"> */}
+            <Map animals={animals} onMapAnimalClicked={handleMapImageClicked} />
+            {/* </div> */}
 
             <div className="facts-container">
                 <h1>Fun fact</h1>
