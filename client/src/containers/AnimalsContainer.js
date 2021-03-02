@@ -155,7 +155,7 @@ const AnimalsContainer = () => {
 
             <div className="quiz-container">
                 <h2>Quiz will go here...</h2>
-                <Quiz selectionAnimal={selectedAnimal} />
+                <Quiz />
             </div>
 
         </div>
