@@ -50,8 +50,7 @@ body {
         "favourites favourites"
         "map facts"
         "animals-list animal-detail"
-        "quiz quiz"
-        "footer footer";
+        "quiz quiz";
     gap: 1em;
     margin: 1em;
 }
@@ -176,12 +175,6 @@ header h1 {
 .quiz-container {
     grid-area: quiz;
     background: rgba(218, 35, 175, 0.7);
-    padding-bottom: 1em;
-}
-
-.footer {
-    grid-area: footer;
-    padding-bottom: 0.2em;
 }
 
 .container {
@@ -192,19 +185,22 @@ header h1 {
 .favourites-container {
     grid-area: favourites;
     text-align: center;
-    /* background-color: orange; */
-    background-image: url(./static/images/jungle-header-background.jpg);
+    background-color: orange;
+    /* background-image: url(./static/images/jungle-header-background.jpg); */
     background-size: cover;
     background-position: bottom;
 }
 
 .favouriteAnimalsTitle {
-    color: rgba(218, 35, 175, 0.961);
+    text-align: left;
+    padding-left: 1em;
+    color: green;
 }
 
 .fav-container {
     display: flex;
     overflow-x: auto;
+    background-color: orange;
     /* width: 80%;
     margin: auto;
     justify-items: center; */
@@ -280,8 +276,7 @@ header,
 }
 
 .status-button {
-    /* background: rgba(218, 35, 175, 0.961); */
-    background: red;
+    background: rgba(218, 35, 175, 0.961);
     color: white;
     border-radius: 25px;
     padding: 0.5em 1.5em;
