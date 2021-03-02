@@ -191,15 +191,19 @@ header h1 {
 /* Favourite container hold favourite animal images */
 .favourites-container {
     grid-area: favourites;
-    text-align: center;
+    text-align: left;
     /* background-color: orange; */
-    background-image: url(./static/images/jungle-header-background.jpg);
+    /* background-image: url(./static/images/jungle-header-background.jpg); */
+    background: orange;
     background-size: cover;
     background-position: bottom;
 }
 
 .favouriteAnimalsTitle {
-    color: rgba(218, 35, 175, 0.961);
+    /* color: rgba(218, 35, 175, 0.961); */
+    color: green;
+    text-align: left;
+    padding-left: 1em;
 }
 
 .fav-container {
