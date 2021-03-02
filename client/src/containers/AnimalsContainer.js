@@ -27,7 +27,7 @@ const AnimalsContainer = () => {
     useEffect(() => {
         AnimalsService.getAnimals()
             .then(data => setAnimals(data))
-        // .then(getLocalStorageFavAnimals)
+            .then(getLocalStorageFavAnimals)
     }, [])
 
 
@@ -53,6 +53,13 @@ const AnimalsContainer = () => {
 
     // Update state with a single animal object that was selected
     const handleSelectedAnimal = (animal) => {
+        // Check if animal is a favourite and if it is use that instead of the selected object
+        // to allow deleting from fav list regardless of whether selection is from fav list or search results list
+        const tempAnimal = favouriteAnimals.find(favouriteAnimal => favouriteAnimal._id === animal._id)
+        if (tempAnimal) {
+            animal = tempAnimal
+        }
+
         // Update the state with the selected animal
         setSelectedAnimal(animal)
     }
@@ -68,16 +75,23 @@ const AnimalsContainer = () => {
             // - Copy the current state of fav animals and add the new fav animal
             favAnimal.favourite = true;
             const newFavAnimalList = [...favouriteAnimals, favAnimal]
-            setFavouriteAnimals(newFavAnimalList);
+
+            setFavouriteAnimals(newFavAnimalList);   // is this setting??
+            console.log("check 1:", newFavAnimalList);
+            console.log("check 1.5:", favouriteAnimals);
+
+            window.localStorage.setItem("lsFavAnimals", JSON.stringify(newFavAnimalList));
         } else {
             // If not a new fav animal
             // - it must already be a fav animal
             // - therefore user is clicking to delete from fav animals
             handleDeleteFavouriteAnimal(favAnimal);
+            // saveLocalStorageFavAnimals();
         }
 
         // Update the local storage of favourite animals
         // window.localStorage.removeItem('lsFavAnimals');
+        // console.log("Check 2:", favouriteAnimals);
         // saveLocalStorageFavAnimals();
     }
 
@@ -90,6 +104,7 @@ const AnimalsContainer = () => {
         // Update the favouriteAnimals state with the new array (with the item clicked removed)
         favAnimal.favourite = false
         setFavouriteAnimals(newFavAnimalList)
+        window.localStorage.setItem("lsFavAnimals", JSON.stringify(newFavAnimalList));
     }
 
 
