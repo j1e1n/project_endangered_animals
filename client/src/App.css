@@ -76,6 +76,10 @@ header {
     grid-area: header;
 }
 
+.endangered-species-text {
+    margin-top: 1em;
+}
+
 .map-container {
     grid-area: map;
     border-radius: 25px;
@@ -88,8 +92,12 @@ header {
 
 .facts-container {
     grid-area: facts;
+    border-radius: 25px;
 }
 
+.fun-fact-card img {
+    border-radius: 25px;
+}
 .animals-list-container {
     grid-area: animals-list;
 }
@@ -116,6 +124,10 @@ header {
 
 .animal-detail-container {
     grid-area: animal-detail;
+}
+
+.animal-detail h2 {
+    margin-bottom: 0.5em;
 }
 
 .quiz-container {
@@ -185,4 +197,18 @@ header,
 .myDIV:hover + .hide {
     display: block;
     color: red;
+}
+
+.far,
+.fas {
+    color: red;
+    font-size: 2em;
+    /* padding-right: 0.6em; */
+    /* margin-top: 0.25em; */
+    cursor: pointer;
+    text-align: left;
+}
+
+.fa-heart {
+    text-align: left;
 }

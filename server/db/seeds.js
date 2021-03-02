@@ -198,166 +198,156 @@ db.quiz.insertMany([
   Question: "What to do if a Bengal tiger is chasing you?",
   
   answerOptions: 
-      {
-    answerText: "A.  Back away slowly", isCorrect: true,
-    answerText: "B.  Look it in the eye", isCorrect: false,
-    answerText: "C.  Start singing the lion king theme tune", isCorrect: false,
-    answerText: "D.  Pretend to be a tiger with a mighty roar", isCorrect: false,
-      },
+      [
+    "A.  Back away slowly",
+    "B.  Look it in the eye",
+    "C.  Start singing the lion king theme tune",
+    "D.  Pretend to be a tiger with a mighty roar"
+      ],
+    correct: 0
 },  
 
 {      
     Question: "How to elephants communicate?",
      
    answerOptions: 
-         {
-          answerText: "A.  They’re telepathic ", isCorrect: false,
-          answerText: "B.  They communicate via rumbles, bellow and moans", isCorrect: true,
-          answerText: "C.  They do the elephant dance", isCorrect: false,
-          answerText: "D.  They use sign language", isCorrect: false,
-    
-         },
-
+         [
+          "A.  They’re telepathic ",
+          "B.  They communicate via rumbles, bellow and moans",
+          "C.  They do the elephant dance",
+          "D.  They use sign language"
+         ],
+         correct: 1
 },
 
 {      
   Question: "How many Giant Panda’s are left?",
    
  answerOptions: 
-       {
-        answerText: "A.  1864", isCorrect: true,
-        answerText: "B.  1800", isCorrect: false,
-        answerText: "C.  1709", isCorrect: false,
-        answerText: "D.  3233", isCorrect: false,
-  
-       },
-
+       [
+        "A.  1864",
+        "B.  1800",
+        "C.  1709",
+        "D.  3233"
+       ],
+       correct: 0
 },
 
 {      
   Question: "What is a group of Gorilla’s called?",
    
  answerOptions: 
-       {
-        answerText: "A.  A pack", isCorrect: false,
-        answerText: "B.  Troops or bands", isCorrect: true,
-        answerText: "C.  The primate massive", isCorrect: false,
-        answerText: "D.  Backstreet boys", isCorrect: false,
-  
-       },
-
+       [
+        "A.  A pack",
+        "B.  Troops or bands",
+        "C.  The primate massive",
+        "D.  Backstreet boys"
+       ],
+       correct: 1
 },
 
 {      
   Question: "How far can a snow leopard jump?",
    
  answerOptions: 
-       {
-        answerText: "A.  20 feet", isCorrect: true,
-        answerText: "B.  10 feet", isCorrect: false,
-        answerText: "C.  50 feet", isCorrect: false,
-        answerText: "D.  80 feet", isCorrect: false,
-  
-       },
-
+       [
+         "A.  20 feet", 
+         "B.  10 feet", 
+         "C.  50 feet",
+         "D.  80 feet"
+       ],
+       correct: 0
 },
 
 {      
   Question: "Which one of these places are you most likely to find a Orangutan?",
    
  answerOptions: 
-       {
-        answerText: "A.  Edinburgh", isCorrect: false,
-        answerText: "B.  Codeclan", isCorrect: false,
-        answerText: "C.  South-east Asia", isCorrect: true,
-        answerText: "D.  Canada", isCorrect: false,
-  
-       },
-
+       [
+        "A.  Edinburgh",
+        "B.  Codeclan",
+        "C.  South-east Asia",
+        "D.  Canada"
+       ],
+       correct: 2
 },
 
 {      
   Question: "Where does the blue whale live?",
    
  answerOptions: 
-       {
-        answerText: "A.  Aberdeen", isCorrect: false,
-        answerText: "B.  Loch Lomond", isCorrect: false,
-        answerText: "C.  The River", isCorrect: false,
-        answerText: "D.  The Ocean", isCorrect: true,
-  
-       },
-
+       [
+         "A.  Aberdeen",
+         "B.  Loch Lomond",
+         "C.  The River",
+         "D.  The Ocean"
+        ],
+      correct: 3
 },
 
 {      
   Question: "What is the lifespan of a green sea turtle?",
    
  answerOptions: 
-       {
-        answerText: "A.  A.	Up to 20 years", isCorrect: false,
-        answerText: "B.  A.	Up to 80 years", isCorrect: true,
-        answerText: "C.  A.	Up to 200 years", isCorrect: false,
-        answerText: "D.  A.	Up to 400 years", isCorrect: false,
-  
-       },
-
+       [
+         "A.  A.	Up to 20 years",
+         "B.  A.	Up to 80 years",
+         "C.  A.	Up to 200 years",
+         "D.  A.	Up to 400 years"
+       ],
+       correct: 1
 },
 
 {      
   Question: "What is a group of Rhinos called?",
    
  answerOptions: 
-       {
-        answerText: "A.  A pack", isCorrect: false,
-        answerText: "B.  The dirty horn gang", isCorrect: false,
-        answerText: "C.  A smoke", isCorrect: false,
-        answerText: "D.  A crash", isCorrect: true,
-  
-       },
-
+       [
+         "A.  A pack",
+         "B.  The dirty horn gang",
+         "C.  A smoke",
+         "D.  A crash"
+       ],
+      correct: 3
 },
 
 {      
   Question: "How fast can a African penguin swim?",
    
  answerOptions: 
-       {
-        answerText: "A.  A.	110 kph", isCorrect: false,
-        answerText: "B.  A.	50 kph", isCorrect: false,
-        answerText: "C.  A.	80 kph", isCorrect: false,
-        answerText: "D.  A.	20 kph", isCorrect: true,
-  
-       },
-
+       [
+         "A.  A.	110 kph",
+         "B.  A.	50 kph", 
+         "C.  A.	80 kph",
+         "D.  A.	20 kph"
+       ],
+       correct: 3
 }, 
 
 {      
   Question: "When do red pandas sleep?",
    
  answerOptions: 
-       {
-        answerText: "A.  Bedtime", isCorrect: false,
-        answerText: "B.  All the time", isCorrect: false,
-        answerText: "C.  Night time", isCorrect: true,
-        answerText: "D.  Sleepy time", isCorrect: false,
-  
-       },
-
+       [
+        "A.  Bedtime",
+        "B.  All the time",
+        "C.  Night time",
+        "D.  Sleepy time"
+       ],
+       correct: 1
 },
 
 {      
   Question: "How do polar bears keep warm?",
    
  answerOptions: 
-       {
-        answerText: "A.  They wear warm hats and scarves ", isCorrect: false,
-        answerText: "B.  Lots of jumping about", isCorrect: false,
-        answerText: "C.  Sunbath as often as possible", isCorrect: false,
-        answerText: "D.  They have a thick layer of fat and a water-repellant coat", isCorrect: true,
-  
-       },
-
+       [
+        "A.  They wear warm hats and scarves ",
+        "B.  Lots of jumping about",
+        "C.  Sunbath as often as possible",
+        "D.  They have a thick layer of fat and a water-repellant coat"
+       ],
+       correct: 1
 }
 ]);
 
