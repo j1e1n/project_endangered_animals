@@ -21,6 +21,7 @@ const AnimalsList = ({ animals, onSelectedAnimal }) => {
     return (
         <div className="animal-list-inner-container">
             {animalListItems}
+            <p>To find out more about an animal, click on a picture</p>
         </div>
     )
 

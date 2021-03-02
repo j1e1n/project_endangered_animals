@@ -138,13 +138,13 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="facts-container">
-                <h1>Fun facts here</h1>
+                <h1>Fun fact</h1>
                 <FunFactCard selectedAnimal={selectedAnimal} />
             </div>
 
             <div className="animals-list-container">
-                {/* <h2>Endangered Animals</h2> */}
-                <img className="endangered-species-text" src="images/endangered-text.png" alt="" />
+                <h2>Endangered Animals </h2>
+                {/* <img className="endangered-species-text" src="images/endangered-text.png" alt="" /> */}
                 <AnimalsList animals={animals} onSelectedAnimal={handleSelectedAnimal} />
             </div>
 
@@ -154,7 +154,7 @@ const AnimalsContainer = () => {
             </div>
 
             <div className="quiz-container">
-                <h2>Quiz will go here...</h2>
+                {/* <h2>Quiz will go here...</h2> */}
                 <Quiz />
             </div>
 

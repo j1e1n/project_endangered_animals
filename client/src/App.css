@@ -17,6 +17,7 @@
 
 body {
     margin: 0;
+    font-family: "RocknRoll One", sans-serif;
 }
 
 .icon-marker {
@@ -43,7 +44,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px auto 1fr 1fr 1fr;
+    grid-template-rows: 120px auto 1fr 1fr 1fr;
     grid-template-areas:
         "header header"
         "favourites favourites"
@@ -74,10 +75,19 @@ li:hover {
 
 header {
     grid-area: header;
+    background-image: url(./static/images/jungle-header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(218, 35, 175, 0.961);
+    font-size: 1.5em;
 }
 
+header h1 {
+    margin-bottom: 2em;
+}
 .endangered-species-text {
     margin-top: 1em;
+    /* opacity: 0.8; */
 }
 
 .map-container {
@@ -88,11 +98,33 @@ header {
 .map-container h1 {
     margin-top: 0;
     margin-bottom: 0;
+    background: #75cff0;
+    color: white;
 }
 
 .facts-container {
     grid-area: facts;
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    background: #e4ecc2;
+}
+
+.facts-container h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.facts-container h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.fun-fact-card p {
+    /* width: 80%; */
+    /* padding-left: 2em;
+    padding-right: 2em; */
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .fun-fact-card img {
@@ -100,6 +132,14 @@ header {
 }
 .animals-list-container {
     grid-area: animals-list;
+    background: #e4ecc2;
+}
+
+.animals-list-container h2 {
+    color: red;
+    font-size: 2rem;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 .animal-list-inner-container {
@@ -116,6 +156,7 @@ header {
     height: auto;
     margin: 0.5em;
     border: 3px solid var(--tertiary-color);
+    border-radius: 25px;
 }
 
 .animal-list-image:hover {
@@ -124,6 +165,7 @@ header {
 
 .animal-detail-container {
     grid-area: animal-detail;
+    background: #75cff0;
 }
 
 .animal-detail h2 {
@@ -132,6 +174,7 @@ header {
 
 .quiz-container {
     grid-area: quiz;
+    background: rgba(218, 35, 175, 0.7);
 }
 
 .container {
@@ -142,6 +185,14 @@ header {
 .favourites-container {
     grid-area: favourites;
     text-align: center;
+    /* background-color: orange; */
+    background-image: url(./static/images/jungle-header-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.favouriteAnimalsTitle {
+    color: rgba(218, 35, 175, 0.961);
 }
 
 .fav-container {
@@ -179,6 +230,7 @@ header,
     /* border: 3px solid grey; */
     text-align: center;
     box-shadow: var(--box-shadow-light);
+    border-radius: 25px;
 }
 
 .favourites-container > li {
@@ -202,13 +254,32 @@ header,
 .far,
 .fas {
     color: red;
-    font-size: 2em;
+    font-size: 1.5em;
     /* padding-right: 0.6em; */
     /* margin-top: 0.25em; */
+    padding-left: 0.5em;
     cursor: pointer;
     text-align: left;
 }
 
 .fa-heart {
     text-align: left;
+}
+
+.map h1 {
+    /* border-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.status-button {
+    background: rgba(218, 35, 175, 0.961);
+    color: white;
+    border-radius: 25px;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+}
+
+.animal-detail img {
+    border-radius: 25px;
 }

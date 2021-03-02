@@ -13,16 +13,18 @@ const animalDetail = ({ selectedAnimal, onFavouriteClick }) => {
     return (
         <>
             <div className="animal-detail">
-                <h2>{selectedAnimal.animal_name}</h2>
-                {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
-                {selectedAnimal.favourite ?
-                    (<i className="fas fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>) :
-                    (<i className="far fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>)
-                }
+                <h2>{selectedAnimal.animal_name}
+                    {/* <span>   </span> */}
+                    {/* Render a + or - sign to add or delete a favourite animal based on an animal attribute being a fav or not */}
+                    {selectedAnimal.favourite ?
+                        (<i className="fas fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>) :
+                        (<i className="far fa-heart" onClick={() => { onFavouriteClick(selectedAnimal) }}  ></i>)
+                    }
+                </h2>
                 <p>Scientific name: {selectedAnimal.species}</p>
                 <p>There are {selectedAnimal.population} {selectedAnimal.animal_name} left in the world.</p>
                 <div className="myDIV">
-                    <h3><b>{selectedAnimal.status}</b></h3>
+                    <h3><b><span className="status-button">{selectedAnimal.status}</span></b></h3>
 
                 </div>
                 <div className="hide">
