@@ -43,12 +43,12 @@ const AnimalsContainer = () => {
     }
 
     // Store favourite animals into localstorage when fav animals list updates
-    const saveLocalStorageFavAnimals = () => {
-        console.log("Saving local storage items");
-        // window.localStorage.removeItem('lsFavAnimals');
-        window.localStorage.setItem("lsFavAnimals", JSON.stringify(favouriteAnimals));
+    // const saveLocalStorageFavAnimals = () => {
+    //     console.log("Saving local storage items");
+    //     // window.localStorage.removeItem('lsFavAnimals');
+    //     window.localStorage.setItem("lsFavAnimals", JSON.stringify(favouriteAnimals));
 
-    }
+    // }
 
 
     // Update state with a single animal object that was selected
