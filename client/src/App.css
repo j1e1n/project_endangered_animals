@@ -50,7 +50,8 @@ body {
         "favourites favourites"
         "map facts"
         "animals-list animal-detail"
-        "quiz quiz";
+        "quiz quiz"
+        "footer footer";
     gap: 1em;
     margin: 1em;
 }
@@ -175,6 +176,12 @@ header h1 {
 .quiz-container {
     grid-area: quiz;
     background: rgba(218, 35, 175, 0.7);
+    padding-bottom: 1em;
+}
+
+.footer {
+    grid-area: footer;
+    padding-bottom: 0.2em;
 }
 
 .container {
@@ -273,7 +280,8 @@ header,
 }
 
 .status-button {
-    background: rgba(218, 35, 175, 0.961);
+    /* background: rgba(218, 35, 175, 0.961); */
+    background: red;
     color: white;
     border-radius: 25px;
     padding: 0.5em 1.5em;

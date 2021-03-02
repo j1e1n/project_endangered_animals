@@ -158,6 +158,11 @@ const AnimalsContainer = () => {
                 <Quiz />
             </div>
 
+
+            <div className="footer">
+
+            </div>
+
         </div>
     )
 }
