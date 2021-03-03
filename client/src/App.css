@@ -331,15 +331,11 @@ header,
 }
 
 .quiz-header-container {
-    /* display: flex;
-    justify-content: center; */
-}
-
-.quiz {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
+
+
 
 .quiz h1 {
     background-color: orange;
@@ -353,6 +349,7 @@ header,
 }
 
 .answer-options {
+    width: auto;
     background-color: orange;
     margin: 1em;
     border-radius: 25px;

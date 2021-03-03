@@ -9,7 +9,7 @@ db.animals.insertMany([
     pictures_detail: "images/animal_detail_pics/panda_detail.jpeg",
     pictures_fact: "images/animal_fact_pics/panda_fact.jpeg",
     pictures_locator: "images/animal_locator_pics/pandalocator.jpeg",
-    description: "Giant panda bear is native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
+    description: "Giant panda bears are native to south central China and lives mainly high in the mountains in cool and wet bamboo forests which is their primary source of food. Pandas are skilled tree-climbers and good swimmers. They have been driven out of the lowland areas where they once lived because of farming and deforestation making it a vulnerable species. Improved conservation efforts and better survey methods have managed to increase the wild panda population.",
     locations: "China",
     habitat: "Bamboo forests on humid mountains",
     population: "2,000",
@@ -26,7 +26,7 @@ db.animals.insertMany([
     pictures_detail: "images/animal_detail_pics/tigerdetail.jpeg",
     pictures_fact: "images/animal_fact_pics/tiger_fact.jpeg",
     pictures_locator: "images/animal_locator_pics/tigerlocator.jpeg",
-    description: "The Bengal tiger lives in the Indian subcontinent. The species is threatened by poaching and loss of habitat caused by climate change. The Bengal tiger is one of the biggest wild cats alive and is the national animal of India and Bangladesh",
+    description: "The Bengal tiger lives in the Indian subcontinent. The species is threatened by poaching and loss of habitat caused by climate change. The Bengal tiger is one of the biggest wild cats alive and is the national animal of India and Bangladesh.",
     locations: "Most live in India, with a few hundred in Bangladesh, Nepal and Bhutan",
     habitat: "Prime lowland forest, and they also thrive in mangrove swamps",
     population: "2,500",
@@ -59,7 +59,7 @@ db.animals.insertMany([
     description: "Gorillas are apes that live in the forests of central Sub-Saharan Africa. They are the largest living primates and their DNA is highly similar to that of humans. A female will give birth to only one baby every four to six years, and only three or four over her entire lifetime, which makes it difficult for gorillas to recover from population declines. Both gorilla species have been decreasing in numbers for decades, but have seen some increase in the recent years due to conservation efforts.",
     locations: "Congo",
     habitat: "Tropical or sub-tropical forests",
-    population: "100,000?",
+    population: "100,000",
     status: "Critically endangered",
     fun_fact: "Some gorillas in captivity have learned to communicate with humans using sign language!",
     locator: ["-0.46355795092012997", "23.552201804629817"],
@@ -71,7 +71,7 @@ db.animals.insertMany([
     pictures_detail: "images/animal_detail_pics/snowleopard_detail.jpeg",
     pictures_fact: "images/animal_fact_pics/snowleopard_fact.jpeg",
     pictures_locator: "images/animal_locator_pics/leopardlocator.jpeg",
-    description: "The snow leopard is a large cat that lives in high mountains. It can climb steep slopes and leap six times the length of its body. The snow leopard habitat range continues to decline due to human settlement and increased use of grazing space",
+    description: "The snow leopard is a large cat that lives in high mountains. It can climb steep slopes and leap six times the length of its body. The snow leopard habitat range continues to decline due to human settlement and increased use of grazing space.",
     locations: "Eastern Afghanistan, Mongolia and western China",
     habitat: " Alpine and subalpine mountain ranges",
     population: "3,500 - 7,000",
@@ -103,7 +103,7 @@ db.animals.insertMany([
     pictures_detail: "images/animal_detail_pics/whale_detail.jpeg",
     pictures_fact: "images/animal_fact_pics/whale_fact.jpeg",
     pictures_locator: "images/animal_locator_pics/whalelocator.jpeg",
-    description: "Blue whale is the largest animal that has ever existed. Blue whales are at the top of the food chain and play an important role in the health of the marine environment. During the 20th century, the species was almost exterminated due to commercial whaling. It slowly recovered following the global whaling ban, but remains threatened by environmental change, habitat loss and toxics.",
+    description: "Blue whales are the largest animal that has ever existed. Blue whales are at the top of the food chain and play an important role in the health of the marine environment. During the 20th century, the species was almost exterminated due to commercial whaling. It slowly recovered following the global whaling ban, but remains threatened by environmental change, habitat loss and toxins.",
     locations: "All major oceans",
     habitat: "deep water",
     population: "10,000-25,000",
@@ -121,7 +121,7 @@ db.animals.insertMany([
     description: "Green sea turtles are large air-breathing reptiles and are one of the Earth's most ancient creatures. They play a vital role in the balance of marine habitats. Nearly all species of sea turtle are endangered. They suffer from poaching, over-exploitation and habitat destruction. It is hard to estimate their population as they are very difficult to track.",
     locations: "Atlantic, Pacific and Indian oceans",
     habitat: "Shallow coastal waters",
-    population: "Estimated ay 90,000 nesting females",
+    population: "100,000",
     status: "Endangered",
     fun_fact: "Green sea turtles can hold their breath underwater for 5 hours!",
     locator: ["-5.7953812553865705", "70.30973006900552"],
@@ -135,7 +135,7 @@ db.animals.insertMany([
     pictures_locator: "images/animal_locator_pics/rhinolocator.jpeg",
     description: "Populations of black rhinos declined by 98% in the 20th century because of European hunters and settlers. Since then, the species has made a comeback from the brink of extinction, but is still considered critically endangered because of poaching and black-market trafficking of rhino horn.",
     locations: "Eastern and southern Africa",
-    habitat: "Semi-Desert Savannah, Woodlands, Forests, Wetlands",
+    habitat: "Semi-Desert savannah, woodlands, forests, wetlands",
     population: "5,000",
     status: "Critically endangered",
     fun_fact: "Black rhinos run on their toes and can reach speeds of 35 miles per hour!",
@@ -181,7 +181,7 @@ db.animals.insertMany([
     description: "The polar bear is a large bear classified as a marine mammal because it spends most of its live on the sea ice of the Arctic Ocean. Polar bears have a thick layer of body fat and a water-repellant coat that insulates them from the cold air and water. Their numbers are in decline because of ongoing loss of their sea ice habitat resulting from climate change.",
     locations: "Arctic circle",
     habitat: "Annual sea ice of the Arctic inter islands",
-    population: "Estimated at 30,000",
+    population: "estimated at 30,000",
     status: "Vulnerable",
     fun_fact: "Polar bears have black skin under their white fur coats, this helps them to keep heat from the sun!",
     locator: ["79.45222766702923", "17.030418490108687"],
@@ -221,7 +221,7 @@ db.quiz.insertMany([
 },
 
 {      
-  Question: "How many Giant Panda’s are left?",
+  Question: "How many Giant Pandas are left?",
    
  answerOptions: 
        [
@@ -234,7 +234,7 @@ db.quiz.insertMany([
 },
 
 {      
-  Question: "What is a group of Gorilla’s called?",
+  Question: "What is a group of Gorillas called?",
    
  answerOptions: 
        [
